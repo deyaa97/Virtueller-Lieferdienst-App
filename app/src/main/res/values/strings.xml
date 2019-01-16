@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Deine Pizza</string>
+    <string name="werbe">Egal wo du bist, deine Pizza wird zu dir geliefert!</string>
+    <string name="preis">Preis:</string>
+    <string name="pizza_salami">Pizza Salami</string>
+    <string name="t_k_s">Tomatensoße, Käse und Salami</string>
+    <string name="pizza_margherita">Pizza Margherita</string>
+    <string name="t_k">Tomatensoße und Käse</string>
+    <string name="pizza_hawaii">Pizza Hawaii</string>
+    <string name="t_k_sc_a">Tomatensoße, Käse, Schinken und Annanas</string>
+    <string name="pizza_vegetaria">Pizza Vegetaria</string>
+    <string name="t_k_pi_pe_pa_z_ar">Tomastensoße, Käse, Pilze, Peperoni, Paprika, Zwiebeln und Artischoken </string>
+    <string name="pizza_speciale">Pizza Spciale</string>
+    <string name="t_k_sp_pi_kn">Tomastensoße, Käse, Spinat, Pilze und Knoblauch</string>
+    <string name="pizza_picante">Pizza Picante</string>
+    <string name="sc_s_spe_papf">Schinken, Salami, Speck und Paprikapfeffer</string>
+    <string name="pizza_mexicana">Pizza Mexicana</string>
+    <string name="t_k_sc_pa_ch_b_m">Tomatensoße, Käse, Schinken, Paprika, Chilischoten, Bohnen und Mais </string>
+    <string name="slogan">Deine Pizza, einfach bestellen!</string>
+    <string name="wp">Wunschpizza</string>
+    <string name="wunschpizza">Erstell dir deine eigene Pizza!</string>
+    <string name="annanas">Annanas</string>
+    <string name="basilikum">Basilikum</string>
+    <string name="brocoli">Brokkoli</string>
+    <string name="champignon">Champignon</string>
+    <string name="fetakaese">Fetakäse</string>
+    <string name="tomate">Kirschtomaten</string>
+    <string name="mais">Mais</string>
+    <string name="chili">Chili</string>
+    <string name="spinat">Spinat</string>
+    <string name="oliven">Oliven</string>
+    <string name="tuna">Thunfisch</string>
+
+
 </resources>
