@@ -10,8 +10,8 @@
     <string name="t_k_sc_a">Tomatensoße, Käse, Schinken und Annanas</string>
     <string name="pizza_vegetaria">Pizza Vegetaria</string>
     <string name="t_k_pi_pe_pa_z_ar">Tomastensoße, Käse, Pilze, Peperoni, Paprika, Zwiebeln und Artischoken </string>
-    <string name="pizza_speciale">Pizza Spciale</string>
-    <string name="t_k_sp_pi_kn">Tomastensoße, Käse, Spinat, Pilze und Knoblauch</string>
+    <string name="pizza_speciale">Pizza Speciale</string>
+    <string name="t_k_sp_pi_o_kn">Tomastensoße, Käse, Spinat, Pilze, Oliven und Knoblauch</string>
     <string name="pizza_picante">Pizza Picante</string>
     <string name="sc_s_spe_papf">Schinken, Salami, Speck und Paprikapfeffer</string>
     <string name="pizza_mexicana">Pizza Mexicana</string>
@@ -30,6 +30,8 @@
     <string name="spinat">Spinat</string>
     <string name="oliven">Oliven</string>
     <string name="tuna">Thunfisch</string>
+    <string name="gross">Groß</string>
+    <string name="familie">Familie</string>
 
 
 </resources>
