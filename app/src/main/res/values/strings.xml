@@ -35,6 +35,10 @@
     <string name="familie">Familie</string>
     <string name="chicken">Hähnchenbrust</string>
     <string name="morzarella">Morzarella</string>
+    <string name="gorgon">Gorgonzolakäse</string>
+    <string name="salami">Salami</string>
+    <string name="schinken">Schinken</string>
+    <string name="redonion">Zwiebeln</string>
 
 
 </resources>
