@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="558dp"
-        android:layout_height="63dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -80,7 +80,7 @@
                         app:layout_constraintGuide_percent=".33" />
 
                     <CheckBox
-                        android:id="@+id/checkBox"
+                        android:id="@+id/annanas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -94,14 +94,14 @@
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView9"
+                        android:id="@+id/Ibasilikum"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox5"
+                        app:layout_constraintBottom_toTopOf="@+id/basilikum"
                         app:layout_constraintEnd_toStartOf="@+id/guideline36"
                         app:layout_constraintStart_toStartOf="@+id/guideline32"
                         app:layout_constraintTop_toTopOf="parent"
@@ -115,7 +115,7 @@
                         app:layout_constraintGuide_percent="0.66" />
 
                     <CheckBox
-                        android:id="@+id/checkBox5"
+                        android:id="@+id/basilikum"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -129,21 +129,21 @@
                         app:layout_constraintStart_toStartOf="@+id/guideline32" />
 
                     <ImageView
-                        android:id="@+id/imageView14"
+                        android:id="@+id/Ibrokkoli"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+                        app:layout_constraintBottom_toTopOf="@+id/brokkoli"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline36"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/broccoli" />
 
                     <CheckBox
-                        android:id="@+id/checkBox3"
+                        android:id="@+id/brokkoli"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -157,14 +157,14 @@
                         app:layout_constraintStart_toStartOf="@+id/guideline36" />
 
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/Iannanas"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+                        app:layout_constraintBottom_toTopOf="@+id/annanas"
                         app:layout_constraintEnd_toStartOf="@+id/guideline32"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -180,7 +180,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <CheckBox
-                        android:id="@+id/checkBox13"
+                        android:id="@+id/gross"
                         android:layout_width="90dp"
                         android:layout_height="29dp"
                         android:layout_marginStart="8dp"
@@ -208,7 +208,7 @@
                         app:layout_constraintGuide_percent=".66" />
 
                     <CheckBox
-                        android:id="@+id/checkBox12"
+                        android:id="@+id/familie"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -246,20 +246,20 @@
                         app:layout_constraintGuide_percent=".66" />
 
                     <ImageView
-                        android:id="@+id/imageView7"
+                        android:id="@+id/Ichampignons"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+                        app:layout_constraintBottom_toTopOf="@+id/champignon"
                         app:layout_constraintEnd_toStartOf="@+id/guideline2"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/cha" />
 
                     <CheckBox
-                        android:id="@+id/checkBox2"
+                        android:id="@+id/champignon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -273,21 +273,21 @@
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView15"
+                        android:id="@+id/Ichili"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+                        app:layout_constraintBottom_toTopOf="@+id/chili"
                         app:layout_constraintEnd_toStartOf="@+id/guideline6"
                         app:layout_constraintStart_toStartOf="@+id/guideline2"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/chilli" />
 
                     <CheckBox
-                        android:id="@+id/checkBox4"
+                        android:id="@+id/chili"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -301,21 +301,21 @@
                         app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
                     <ImageView
-                        android:id="@+id/imageView16"
+                        android:id="@+id/Ispinat"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="26dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox6"
+                        app:layout_constraintBottom_toTopOf="@+id/spinat"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline6"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/spinat" />
 
                     <CheckBox
-                        android:id="@+id/checkBox6"
+                        android:id="@+id/spinat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -352,21 +352,21 @@
                         app:layout_constraintGuide_percent=".66" />
 
                     <ImageView
-                        android:id="@+id/imageView17"
+                        android:id="@+id/Ithunfisch"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox7"
+                        app:layout_constraintBottom_toTopOf="@+id/thunfisch"
                         app:layout_constraintEnd_toStartOf="@+id/guideline27"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/thunfisch" />
 
                     <CheckBox
-                        android:id="@+id/checkBox7"
+                        android:id="@+id/thunfisch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -380,21 +380,21 @@
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView18"
+                        android:id="@+id/Itomaten"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox8"
+                        app:layout_constraintBottom_toTopOf="@+id/tomate"
                         app:layout_constraintEnd_toStartOf="@+id/guideline28"
                         app:layout_constraintStart_toStartOf="@+id/guideline27"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/kirschtomate" />
 
                     <CheckBox
-                        android:id="@+id/checkBox8"
+                        android:id="@+id/tomate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -408,21 +408,21 @@
                         app:layout_constraintStart_toStartOf="@+id/guideline27" />
 
                     <ImageView
-                        android:id="@+id/imageView19"
+                        android:id="@+id/Ifetakaese"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox9"
+                        app:layout_constraintBottom_toTopOf="@+id/fetakaese"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline28"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/fetakaese" />
 
                     <CheckBox
-                        android:id="@+id/checkBox9"
+                        android:id="@+id/fetakaese"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -437,6 +437,7 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraintLayout6"
                     android:layout_width="0dp"
                     android:layout_height="160dp"
                     android:layout_marginStart="8dp"
@@ -460,21 +461,21 @@
                         app:layout_constraintGuide_percent=".66" />
 
                     <ImageView
-                        android:id="@+id/imageView20"
+                        android:id="@+id/Iknoblauch"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox10"
+                        app:layout_constraintBottom_toTopOf="@+id/knoblauch"
                         app:layout_constraintEnd_toStartOf="@+id/guideline31"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/knoblauch" />
 
                     <CheckBox
-                        android:id="@+id/checkBox10"
+                        android:id="@+id/knoblauch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -488,21 +489,21 @@
                         app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView21"
+                        android:id="@+id/Imais"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox11"
+                        app:layout_constraintBottom_toTopOf="@+id/mais"
                         app:layout_constraintEnd_toStartOf="@+id/guideline33"
                         app:layout_constraintStart_toStartOf="@+id/guideline31"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/mais" />
 
                     <CheckBox
-                        android:id="@+id/checkBox11"
+                        android:id="@+id/mais"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -516,21 +517,21 @@
                         app:layout_constraintStart_toStartOf="@+id/guideline31" />
 
                     <ImageView
-                        android:id="@+id/imageView22"
+                        android:id="@+id/Ioliven"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox14"
+                        app:layout_constraintBottom_toTopOf="@+id/oliven"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline33"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/oliven" />
 
                     <CheckBox
-                        android:id="@+id/checkBox14"
+                        android:id="@+id/oliven"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -542,6 +543,83 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline33" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent=".33" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent=".66" />
+
+                    <ImageView
+                        android:id="@+id/Imorzarella"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/morzarella"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/mozzarella" />
+
+                    <CheckBox
+                        android:id="@+id/morzarella"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/morzarella"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/Ihaenchen"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/haenchen"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline35"
+                        app:layout_constraintStart_toStartOf="@+id/guideline34"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/haenchenbrust" />
+
+                    <CheckBox
+                        android:id="@+id/haenchen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/chicken"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline35"
+                        app:layout_constraintStart_toStartOf="@+id/guideline34" />
                 </android.support.constraint.ConstraintLayout>
 
             </android.support.constraint.ConstraintLayout>
