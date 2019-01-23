@@ -39,7 +39,7 @@
     <Button
         android:id="@+id/wunsch"
         android:layout_width="wrap_content"
-        android:layout_height="51dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/wp"
         android:textAlignment="center"
@@ -373,7 +373,7 @@
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_height="184dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
