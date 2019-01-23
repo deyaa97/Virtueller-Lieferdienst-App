@@ -24,16 +24,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/preis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Preis"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -41,7 +31,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/preis"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +45,7 @@
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="1000dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
@@ -77,7 +67,7 @@
                 <android.support.constraint.ConstraintLayout
                     android:id="@+id/constraintLayout2"
                     android:layout_width="0dp"
-                    android:layout_height="200dp"
+                    android:layout_height="160dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
@@ -99,7 +89,7 @@
                         android:text="@string/annanas"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/textView19"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline32"
                         app:layout_constraintStart_toStartOf="parent" />
 
@@ -134,7 +124,7 @@
                         android:text="@string/basilikum"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pbasilikum"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline36"
                         app:layout_constraintStart_toStartOf="@+id/guideline32" />
 
@@ -155,14 +145,14 @@
                     <CheckBox
                         android:id="@+id/brokkoli"
                         android:layout_width="wrap_content"
-                        android:layout_height="30dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
                         android:text="@string/brocoli"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pbrokkoli"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline36" />
 
@@ -181,40 +171,52 @@
                         app:srcCompat="@drawable/anana" />
 
                     <TextView
-                        android:id="@+id/textView19"
+                        android:id="@+id/textView28"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
+                        android:layout_marginBottom="10dp"
                         android:text="€"
+                        android:textAlignment="center"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline32"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/annanas"
+                        app:layout_constraintTop_toBottomOf="@+id/Iannanas"
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
-                        android:id="@+id/pbrokkoli"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/textView29"
+                        android:layout_width="6dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/guideline36" />
-
-                    <TextView
-                        android:id="@+id/pbasilikum"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
                         android:text="€"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline36"
-                        app:layout_constraintStart_toStartOf="@+id/guideline32" />
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/basilikum"
+                        app:layout_constraintTop_toBottomOf="@+id/Ibasilikum"
+                        app:layout_constraintVertical_bias="0.857" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="9dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="€"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/brokkoli"
+                        app:layout_constraintTop_toBottomOf="@+id/Ibrokkoli"
+                        app:layout_constraintVertical_bias="0.785" />
                 </android.support.constraint.ConstraintLayout>
 
                 <android.support.constraint.ConstraintLayout
@@ -233,10 +235,9 @@
                         app:layout_constraintGuide_percent=".5" />
 
                     <RadioGroup
+                        android:id="@+id/radiog"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
                         android:orientation="horizontal"
                         android:visibility="visible"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -263,7 +264,7 @@
                 <android.support.constraint.ConstraintLayout
                     android:id="@+id/constraintLayout3"
                     android:layout_width="0dp"
-                    android:layout_height="200dp"
+                    android:layout_height="160dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
@@ -289,7 +290,6 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
                         app:layout_constraintBottom_toTopOf="@+id/champignon"
                         app:layout_constraintEnd_toStartOf="@+id/guideline2"
                         app:layout_constraintStart_toStartOf="parent"
@@ -306,7 +306,7 @@
                         android:text="@string/champignon"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pchampignon"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline2"
                         app:layout_constraintStart_toStartOf="parent" />
 
@@ -334,7 +334,7 @@
                         android:text="@string/chili"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pchili"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline6"
                         app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
@@ -345,7 +345,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
+                        android:layout_marginBottom="26dp"
                         app:layout_constraintBottom_toTopOf="@+id/spinat"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline6"
@@ -362,42 +362,6 @@
                         android:text="@string/spinat"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pspinat"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/guideline6" />
-
-                    <TextView
-                        android:id="@+id/pchampignon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <TextView
-                        android:id="@+id/pchili"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-                        app:layout_constraintStart_toStartOf="@+id/guideline2" />
-
-                    <TextView
-                        android:id="@+id/pspinat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline6" />
@@ -406,7 +370,7 @@
                 <android.support.constraint.ConstraintLayout
                     android:id="@+id/constraintLayout4"
                     android:layout_width="0dp"
-                    android:layout_height="200dp"
+                    android:layout_height="160dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
@@ -449,7 +413,7 @@
                         android:text="@string/tuna"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pthunfisch"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline27"
                         app:layout_constraintStart_toStartOf="parent" />
 
@@ -477,7 +441,7 @@
                         android:text="@string/tomate"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/ptomate"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline28"
                         app:layout_constraintStart_toStartOf="@+id/guideline27" />
 
@@ -505,42 +469,6 @@
                         android:text="@string/fetakaese"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pfetakaese"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/guideline28" />
-
-                    <TextView
-                        android:id="@+id/pthunfisch"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/guideline27"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <TextView
-                        android:id="@+id/ptomate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/guideline28"
-                        app:layout_constraintStart_toStartOf="@+id/guideline27" />
-
-                    <TextView
-                        android:id="@+id/pfetakaese"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline28" />
@@ -549,7 +477,7 @@
                 <android.support.constraint.ConstraintLayout
                     android:id="@+id/constraintLayout6"
                     android:layout_width="0dp"
-                    android:layout_height="200dp"
+                    android:layout_height="160dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -594,7 +522,7 @@
                         android:text="@string/garlic"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pknoblauch"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline31"
                         app:layout_constraintStart_toStartOf="parent" />
 
@@ -622,7 +550,7 @@
                         android:text="@string/mais"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pmais"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline33"
                         app:layout_constraintStart_toStartOf="@+id/guideline31" />
 
@@ -650,42 +578,6 @@
                         android:text="@string/oliven"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/poliven"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/guideline33" />
-
-                    <TextView
-                        android:id="@+id/pknoblauch"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/guideline31"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <TextView
-                        android:id="@+id/pmais"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/guideline33"
-                        app:layout_constraintStart_toStartOf="@+id/guideline31" />
-
-                    <TextView
-                        android:id="@+id/poliven"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline33" />
@@ -694,7 +586,7 @@
                 <android.support.constraint.ConstraintLayout
                     android:id="@+id/constraintLayout7"
                     android:layout_width="0dp"
-                    android:layout_height="200dp"
+                    android:layout_height="160dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
@@ -736,7 +628,7 @@
                         android:layout_marginBottom="8dp"
                         android:text="@string/morzarella"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pmorzarella"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline34"
                         app:layout_constraintStart_toStartOf="parent" />
 
@@ -764,7 +656,7 @@
                         android:text="@string/chicken"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/chicken"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline35"
                         app:layout_constraintStart_toStartOf="@+id/guideline34" />
 
@@ -776,14 +668,14 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/gorgonzola"
+                        app:layout_constraintBottom_toTopOf="@+id/checkBox"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline35"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/gorgonzola" />
 
                     <CheckBox
-                        android:id="@+id/gorgonzola"
+                        android:id="@+id/checkBox"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -791,42 +683,6 @@
                         android:layout_marginBottom="8dp"
                         android:text="@string/gorgon"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pgorgonzola"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/guideline35" />
-
-                    <TextView
-                        android:id="@+id/pmorzarella"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/guideline34"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <TextView
-                        android:id="@+id/chicken"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/guideline35"
-                        app:layout_constraintStart_toStartOf="@+id/guideline34" />
-
-                    <TextView
-                        android:id="@+id/pgorgonzola"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline35" />
@@ -834,7 +690,7 @@
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="0dp"
-                    android:layout_height="200dp"
+                    android:layout_height="160dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
@@ -876,7 +732,7 @@
                         android:layout_marginBottom="8dp"
                         android:text="@string/salami"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/psalami"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline29"
                         app:layout_constraintStart_toStartOf="parent" />
 
@@ -903,7 +759,7 @@
                         android:layout_marginBottom="8dp"
                         android:text="@string/schinken"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/pschinken"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline37"
                         app:layout_constraintStart_toStartOf="@+id/guideline29" />
 
@@ -927,44 +783,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
                         android:text="@string/redonion"
                         android:textStyle="bold"
-                        app:layout_constraintBottom_toTopOf="@+id/predonion"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="@+id/guideline37" />
-
-                    <TextView
-                        android:id="@+id/psalami"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/guideline29"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <TextView
-                        android:id="@+id/pschinken"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/guideline37"
-                        app:layout_constraintStart_toStartOf="@+id/guideline29" />
-
-                    <TextView
-                        android:id="@+id/predonion"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="€"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/guideline37" />
@@ -987,15 +808,5 @@
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/euro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="€"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/preis"
-        app:layout_constraintStart_toEndOf="@+id/preis" />
 
 </android.support.constraint.ConstraintLayout>
