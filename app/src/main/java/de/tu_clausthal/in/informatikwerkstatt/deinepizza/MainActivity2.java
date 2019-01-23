@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
     int quantity7 = 0;
     float gespreis, preis1, preis2, preis3, preis4, preis5, preis6, preis7, preis_sa, preis_ma, preis_ha, preis_veg, preis_spec, preis_pica, preis_mex;
     String item, item2, item3, item4, item5, item6, item7;
-    TextView gespreist;
+    TextView gespreist, gsalami, gmargherita, ghawaii, gvegetaria, gspeciale, gpicante, gmexicana;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -184,7 +184,7 @@ public class MainActivity2 extends AppCompatActivity {
                 display(quantity7);
             }
         });
-        //Spinner definieren
+        //Spinner Salami definieren
         spin_sa = (Spinner) findViewById(R.id.spin_sa);
         //Die Liste von Elementen im Spinner
         List<String> list = new ArrayList<>();
@@ -201,20 +201,20 @@ public class MainActivity2 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 if (spin_sa.getSelectedItem().toString().trim().equals("S")) {
-                    preis1 = (float) 3.90;
+                    preis1 = (float) 3.20;
 
                 }if (spin_sa.getSelectedItem().toString().trim().equals("M")) {
-                    preis1 = (float)6.90;
+                    preis1 = (float)5.90;
 
                 }if (spin_sa.getSelectedItem().toString().trim().equals("L")) {
-                    preis1 = (float) 8.90;
+                    preis1 = (float) 7.90;
                 }
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Margherita definieren
         spin_ma = (Spinner) findViewById(R.id.spin_ma);
         //Die Liste von Elementen im Spinner
         List<String> list2 = new ArrayList<>();
@@ -243,7 +243,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Hawaii definieren
         spin_ha = (Spinner) findViewById(R.id.spin_ha);
         //Die Liste von Elementen im Spinner
         List<String> list3 = new ArrayList<>();
@@ -259,9 +259,9 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent3, View view3, int position3, long id3) {
                 if (spin_ha.getSelectedItem().toString().trim().equals("S")) {
-                    preis3 = (float) 4.50;
+                    preis3 = (float) 3.90;
                 }if (spin_ha.getSelectedItem().toString().trim().equals("M")) {
-                    preis3 = (float) 6.70;
+                    preis3 = (float) 6.50;
                 }if (spin_ha.getSelectedItem().toString().trim().equals("L")) {
                     preis3 = (float) 8.90;
                 }
@@ -270,7 +270,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Vegetaria definieren
         spin_veg = (Spinner) findViewById(R.id.spin_veg);
         //Die Liste von Elementen im Spinner
         List<String> list4 = new ArrayList<>();
@@ -291,15 +291,17 @@ public class MainActivity2 extends AppCompatActivity {
                 }if (spin_veg.getSelectedItem().toString().trim().equals("M")) {
                     preis4 = (float) 6.90;
 
+
                 }if (spin_veg.getSelectedItem().toString().trim().equals("L")) {
                     preis4 = (float) 9.50;
+
                 }
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Speciale definieren
         spin_spec = (Spinner) findViewById(R.id.spin_spec);
         //Die Liste von Elementen im Spinner
         List<String> list5 = new ArrayList<>();
@@ -315,19 +317,21 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent5, View view5, int position5, long id5) {
                 if (spin_spec.getSelectedItem().toString().trim().equals("S")) {
-                    preis5 = (float) 4.90;
+                    preis5 = (float) 4.20;
 
                 }if (spin_spec.getSelectedItem().toString().trim().equals("M")) {
-                    preis5 = (float) 6.90;
+                    preis5 = (float) 6.50;
+
                 }if (spin_spec.getSelectedItem().toString().trim().equals("L")) {
-                    preis5 = (float) 9.50;
+                    preis5 = (float) 8.50;
+
                 }
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Picante definieren
         spin_pica = (Spinner) findViewById(R.id.spin_pica);
         //Die Liste von Elementen im Spinner
         List<String> list6 = new ArrayList<>();
@@ -345,20 +349,21 @@ public class MainActivity2 extends AppCompatActivity {
                 if (spin_pica.getSelectedItem().toString().trim().equals("S")) {
                     preis6 = (float) 4.90;
 
+
                 }
                 if (spin_pica.getSelectedItem().toString().trim().equals("M")) {
                     preis6 = (float) 6.90;
 
                 }
                 if (spin_pica.getSelectedItem().toString().trim().equals("L")) {
-                    preis6 = (float) 9.50;
+                    preis6 = (float) 9.90;
                 }
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Mexicana definieren
         spin_mex = (Spinner) findViewById(R.id.spin_mex);
         //Die Liste von Elementen im Spinner
         List<String> list7 = new ArrayList<>();
@@ -374,13 +379,14 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent7, View view7, int position7, long id7) {
                 if (spin_mex.getSelectedItem().toString().trim().equals("S")) {
-                    preis7 = (float) 4.90;
+                    preis7 = (float) 4.50;
 
                 }if (spin_mex.getSelectedItem().toString().trim().equals("M")) {
-                    preis7 = (float) 6.90;
+                    preis7 = (float) 7.50;
 
                 }if (spin_mex.getSelectedItem().toString().trim().equals("L")) {
                     preis7 = (float) 9.50;
+
                 }
             }
             @Override

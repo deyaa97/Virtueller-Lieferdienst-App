@@ -9,11 +9,11 @@
     <string name="pizza_hawaii">Pizza Hawaii</string>
     <string name="t_k_sc_a">Tomatensoße, Käse, Schinken und Annanas</string>
     <string name="pizza_vegetaria">Pizza Vegetaria</string>
-    <string name="t_k_pi_pe_pa_z_ar">Tomastensoße, Käse, Pilze, Peperoni, Paprika, Zwiebeln und Artischoken </string>
+    <string name="t_k_pi_pe_pa_z_ar_m">Tomastensoße, Käse, Pilze, Peperoni, Paprika, Zwiebeln, Artischoken und Mais </string>
     <string name="pizza_speciale">Pizza Speciale</string>
-    <string name="t_k_sp_pi_o_kn">Tomastensoße, Käse, Spinat, Pilze, Oliven und Knoblauch</string>
+    <string name="t_k_sp_pi_o_kn_s">Tomastensoße, Käse, Spinat, Pilze, Oliven, Knoblauch und Salami</string>
     <string name="pizza_picante">Pizza Picante</string>
-    <string name="sc_s_spe_papf">Schinken, Salami, Speck und Paprikapfeffer</string>
+    <string name="sc_s_spe_papf_o">Schinken, Salami, Speck, Paprikapfeffer und Zwiebeln</string>
     <string name="pizza_mexicana">Pizza Mexicana</string>
     <string name="t_k_sc_pa_ch_b_m">Tomatensoße, Käse, Schinken, Paprika, Chilischoten, Bohnen und Mais </string>
     <string name="slogan">Deine Pizza, einfach bestellen!</string>

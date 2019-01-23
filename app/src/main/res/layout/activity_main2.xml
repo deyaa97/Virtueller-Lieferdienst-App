@@ -230,6 +230,21 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_percent=".7" />
 
+                <TextView
+                    android:id="@+id/gsalami"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="€"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
             </android.support.constraint.ConstraintLayout>
 
             <Space
@@ -372,6 +387,21 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_percent=".7" />
 
+                <TextView
+                    android:id="@+id/gmargherita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="€"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
             </android.support.constraint.ConstraintLayout>
 
             <Space
@@ -512,6 +542,20 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_percent=".8" />
+
+                <TextView
+                    android:id="@+id/ghawaii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="€"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4" />
             </android.support.constraint.ConstraintLayout>
 
             <Space
@@ -603,7 +647,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/t_k_pi_pe_pa_z_ar"
+                    android:text="@string/t_k_pi_pe_pa_z_ar_m"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -645,6 +689,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_percent=".7" />
+
+                <TextView
+                    android:id="@+id/gvegetaria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="€"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
             </android.support.constraint.ConstraintLayout>
 
@@ -723,7 +782,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/t_k_sp_pi_o_kn"
+                    android:text="@string/t_k_sp_pi_o_kn_s"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -781,6 +840,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_percent=".8" />
+
+                <TextView
+                    android:id="@+id/gspeciale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="€"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
             </android.support.constraint.ConstraintLayout>
 
@@ -886,7 +960,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/sc_s_spe_papf"
+                    android:text="@string/sc_s_spe_papf_o"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -917,6 +991,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_percent=".8" />
+
+                <TextView
+                    android:id="@+id/gpicante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="€"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="@+id/imageView10" />
             </android.support.constraint.ConstraintLayout>
 
             <Space
@@ -1054,6 +1143,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:layout_constraintGuide_percent=".7" />
+
+                <TextView
+                    android:id="@+id/gmexicana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="€"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView11"
+                    app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
             </android.support.constraint.ConstraintLayout>
 
