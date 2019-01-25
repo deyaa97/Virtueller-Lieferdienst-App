@@ -37,7 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
+        // Variablen und Id Verbindungen
         pl_sa = (Button) findViewById(R.id.pl_sa);
         pl_ma = (Button) findViewById(R.id.pl_ma);
         pl_ha = (Button) findViewById(R.id.pl_ha);
@@ -61,7 +61,7 @@ public class MainActivity2 extends AppCompatActivity {
         e_spec = (EditText) findViewById(R.id.e_spec);
         e_pica = (EditText) findViewById(R.id.e_pica);
         e_mex = (EditText) findViewById(R.id.e_mex);
-
+        //Text veränderung
         gespreist = (TextView) findViewById(R.id.gespreis);
         gsalami = (TextView) findViewById(R.id.gsalami);
         gmargherita = (TextView) findViewById(R.id.gmargherita);
@@ -419,6 +419,7 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     }
+    // Anzahl an Pizzen +1
     public void increment (int view) {
         if (pl_sat == true) {
             quantity1 = quantity1 + 1;
@@ -436,6 +437,7 @@ public class MainActivity2 extends AppCompatActivity {
             quantity7 = quantity7 + 1;
         }
     }
+    // Anzahl an pizzen -1
     public void decrement (int view) {
         if (quantity1 >0 && mi_sat == true){
             quantity1 = quantity1 - 1;
@@ -485,7 +487,7 @@ public class MainActivity2 extends AppCompatActivity {
         }
     }
 
-
+    // Berechnung des Gesamtpreises
     public void gesamtpreis () {
         preis_sa = quantity1 * preis1;
         preis_ma = quantity2 * preis2;
@@ -497,7 +499,7 @@ public class MainActivity2 extends AppCompatActivity {
         gespreis = preis_sa + preis_ma + preis_ha + preis_veg + preis_spec + preis_pica + preis_mex;
         gespreist.setText(String.valueOf(gespreis) + "€");
     }
-    // drittes Activity, um das neue Seite zu öffnen
+    // 3 Activity, um die neue Seite zu öffnen
     public void openMainActivity3 () {
         Intent intent2 = new Intent( this, MainActivity3.class);
         startActivity(intent2);
