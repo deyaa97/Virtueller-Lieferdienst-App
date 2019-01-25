@@ -63,6 +63,13 @@ public class MainActivity2 extends AppCompatActivity {
         e_mex = (EditText) findViewById(R.id.e_mex);
 
         gespreist = (TextView) findViewById(R.id.gespreis);
+        gsalami = (TextView) findViewById(R.id.gsalami);
+        gmargherita = (TextView) findViewById(R.id.gmargherita);
+        ghawaii = (TextView) findViewById(R.id.ghawaii);
+        gvegetaria = (TextView) findViewById(R.id.gvegetaria);
+        gspeciale = (TextView) findViewById(R.id.gspeciale);
+        gpicante = (TextView) findViewById(R.id.gpicante);
+        gmexicana = (TextView) findViewById(R.id.gmexicana);
         preis = (Button) findViewById(R.id.preis);
         preis.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -209,6 +216,7 @@ public class MainActivity2 extends AppCompatActivity {
                 }if (spin_sa.getSelectedItem().toString().trim().equals("L")) {
                     preis1 = (float) 7.90;
                 }
+                gsalami.setText(String.valueOf(preis1) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
@@ -238,6 +246,7 @@ public class MainActivity2 extends AppCompatActivity {
                 }if (spin_ma.getSelectedItem().toString().trim().equals("L")) {
                     preis2 = (float) 6.90;
                 }
+                gmargherita.setText(String.valueOf(preis2) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
@@ -265,6 +274,7 @@ public class MainActivity2 extends AppCompatActivity {
                 }if (spin_ha.getSelectedItem().toString().trim().equals("L")) {
                     preis3 = (float) 8.90;
                 }
+                ghawaii.setText(String.valueOf(preis3) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
@@ -296,6 +306,7 @@ public class MainActivity2 extends AppCompatActivity {
                     preis4 = (float) 9.50;
 
                 }
+                gvegetaria.setText(String.valueOf(preis4) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
@@ -326,6 +337,7 @@ public class MainActivity2 extends AppCompatActivity {
                     preis5 = (float) 8.50;
 
                 }
+                gspeciale.setText(String.valueOf(preis5) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
@@ -358,6 +370,7 @@ public class MainActivity2 extends AppCompatActivity {
                 if (spin_pica.getSelectedItem().toString().trim().equals("L")) {
                     preis6 = (float) 9.90;
                 }
+                gpicante.setText(String.valueOf(preis6) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
@@ -388,6 +401,7 @@ public class MainActivity2 extends AppCompatActivity {
                     preis7 = (float) 9.50;
 
                 }
+                gmexicana.setText(String.valueOf(preis7) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
