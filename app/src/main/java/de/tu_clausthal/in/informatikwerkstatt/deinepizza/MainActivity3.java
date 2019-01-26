@@ -62,18 +62,19 @@ public class MainActivity3 extends AppCompatActivity {
             }
         }
 
-        brokkoli= (CheckBox) findViewById(R.id.brokkoli);
+        brokkoli = (CheckBox) findViewById(R.id.brokkoli );
         if (brokkoli.isChecked()) {
             if (familie = true) {
-                preis = (float) (preis + 0.8) ;
+                preis = (float) (preis + 0.7) ;
 
             }
             if (gross = true) {
-                preis = (float) (preis + 0.6);
+                preis = (float) (preis + 0.5);
             }
         }
 
-        champignon = (CheckBox) findViewById(R.id.champignon);
+
+        champignon = (CheckBox) findViewById(R.id.champignon );
         if (champignon.isChecked()) {
             if (familie = true) {
                 preis = (float) (preis + 0.7) ;
@@ -84,7 +85,7 @@ public class MainActivity3 extends AppCompatActivity {
             }
         }
 
-        chili = (CheckBox) findViewById(R.id.chili);
+        chili = (CheckBox) findViewById(R.id.chili );
         if (chili.isChecked()) {
             if (familie = true) {
                 preis = (float) (preis + 0.7) ;
@@ -95,7 +96,7 @@ public class MainActivity3 extends AppCompatActivity {
             }
         }
 
-        spinat = (CheckBox) findViewById(R.id.spinat);
+        spinat = (CheckBox) findViewById(R.id.spinat );
         if (spinat.isChecked()) {
             if (familie = true) {
                 preis = (float) (preis + 0.7) ;
@@ -106,29 +107,30 @@ public class MainActivity3 extends AppCompatActivity {
             }
         }
 
-        thunfisch = (CheckBox) findViewById(R.id.thunfisch);
+        thunfisch = (CheckBox) findViewById(R.id.thunfisch );
         if (thunfisch.isChecked()) {
             if (familie = true) {
-                preis = (float) (preis + 0.8) ;
+                preis = (float) (preis + 0.7) ;
 
             }
             if (gross = true) {
-                preis = (float) (preis + 0.6);
+                preis = (float) (preis + 0.5);
             }
         }
 
-        tomate = (CheckBox) findViewById(R.id.tomate);
+
+        tomate = (CheckBox) findViewById(R.id.tomate );
         if (tomate.isChecked()) {
             if (familie = true) {
-                preis = (float) (preis + 0.4) ;
+                preis = (float) (preis + 0.7) ;
 
             }
             if (gross = true) {
-                preis = (float) (preis + 0.3);
+                preis = (float) (preis + 0.5);
             }
         }
 
-        fetakaese = (CheckBox) findViewById(R.id.fetakaese);
+        fetakaese = (CheckBox) findViewById(R.id.fetakaese );
         if (fetakaese.isChecked()) {
             if (familie = true) {
                 preis = (float) (preis + 0.7) ;
@@ -139,21 +141,10 @@ public class MainActivity3 extends AppCompatActivity {
             }
         }
 
-        knoblauch = (CheckBox) findViewById(R.id.knoblauch);
+        knoblauch = (CheckBox) findViewById(R.id.knoblauch );
         if (knoblauch.isChecked()) {
             if (familie = true) {
-                preis = (float) (preis + 0.4) ;
-
-            }
-            if (gross = true) {
-                preis = (float) (preis + 0.2);
-            }
-        }
-
-        mais = (CheckBox) findViewById(R.id.mais);
-        if (mais.isChecked()) {
-            if (familie = true) {
-                preis = (float) (preis + 0.8) ;
+                preis = (float) (preis + 0.7) ;
 
             }
             if (gross = true) {
@@ -161,83 +152,98 @@ public class MainActivity3 extends AppCompatActivity {
             }
         }
 
-        oliven = (CheckBox) findViewById(R.id.oliven);
+        mais = (CheckBox) findViewById(R.id.mais );
+        if (mais.isChecked()) {
+            if (familie = true) {
+                preis = (float) (preis + 0.7) ;
+
+            }
+            if (gross = true) {
+                preis = (float) (preis + 0.5);
+            }
+        }
+
+        oliven = (CheckBox) findViewById(R.id.oliven );
         if (oliven.isChecked()) {
             if (familie = true) {
                 preis = (float) (preis + 0.7) ;
 
             }
             if (gross = true) {
-                preis = (float) (preis + 0.4);
+                preis = (float) (preis + 0.5);
             }
         }
 
-        morzarella = (CheckBox) findViewById(R.id.morzarella);
+        morzarella = (CheckBox) findViewById(R.id.morzarella );
         if (morzarella.isChecked()) {
             if (familie = true) {
-                preis = (float) (preis + 0.9) ;
-
-            }
-            if (gross = true) {
-                preis = (float) (preis + 0.6);
-            }
-        }
-
-        haenchen = (CheckBox) findViewById(R.id.haenchen);
-        if (haenchen.isChecked()) {
-            if (familie = true) {
-                preis = (float) (preis + 1.5) ;
-
-            }
-            if (gross = true) {
-                preis = (float) (preis + 0.8);
-            }
-        }
-
-        gorgonzola = (CheckBox) findViewById(R.id.gorgonzola);
-        if (gorgonzola.isChecked()) {
-            if (familie = true) {
-                preis = (float) (preis + 1.0) ;
-
-            }
-            if (gross = true) {
-                preis = (float) (preis + 0.6);
-            }
-        }
-
-        salami = (CheckBox) findViewById(R.id.salami);
-        if (salami.isChecked()) {
-            if (familie = true) {
-                preis = (float) (preis + 1.0) ;
-
-            }
-            if (gross = true) {
-                preis = (float) (preis + 0.6);
-            }
-        }
-
-        schinken = (CheckBox) findViewById(R.id.schinken);
-        if (schinken.isChecked()) {
-            if (familie = true) {
-                preis = (float) (preis + 1.0) ;
-
-            }
-            if (gross = true) {
-                preis = (float) (preis + 0.6);
-            }
-        }
-
-        redonion = (CheckBox) findViewById(R.id.redonion);
-        if (redonion.isChecked()) {
-            if (familie = true) {
-                preis = (float) (preis + 0.8) ;
+                preis = (float) (preis + 0.7) ;
 
             }
             if (gross = true) {
                 preis = (float) (preis + 0.5);
             }
         }
-        
+
+        haenchen = (CheckBox) findViewById(R.id.haenchen );
+        if (haenchen.isChecked()) {
+            if (familie = true) {
+                preis = (float) (preis + 0.7) ;
+
+            }
+            if (gross = true) {
+                preis = (float) (preis + 0.5);
+            }
+        }
+
+        gorgonzola = (CheckBox) findViewById(R.id.gorgonzola );
+        if (gorgonzola.isChecked()) {
+            if (familie = true) {
+                preis = (float) (preis + 0.7) ;
+
+            }
+            if (gross = true) {
+                preis = (float) (preis + 0.5);
+            }
+        }
+
+        salami = (CheckBox) findViewById(R.id.salami );
+        if (salami.isChecked()) {
+            if (familie = true) {
+                preis = (float) (preis + 0.7) ;
+
+            }
+            if (gross = true) {
+                preis = (float) (preis + 0.5);
+            }
+        }
+
+        schinken = (CheckBox) findViewById(R.id.schinken );
+        if (schinken.isChecked()) {
+            if (familie = true) {
+                preis = (float) (preis + 0.7) ;
+
+            }
+            if (gross = true) {
+                preis = (float) (preis + 0.5);
+            }
+        }
+
+        redonion = (CheckBox) findViewById(R.id.redonion );
+        if (redonion.isChecked()) {
+            if (familie = true) {
+                preis = (float) (preis + 0.7) ;
+
+            }
+            if (gross = true) {
+                preis = (float) (preis + 0.5);
+            }
+        }
+
+
+
+
+
 
     }
 }
