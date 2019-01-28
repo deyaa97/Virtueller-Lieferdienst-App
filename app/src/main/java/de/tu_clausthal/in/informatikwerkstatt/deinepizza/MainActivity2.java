@@ -1,9 +1,7 @@
 package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
 import android.content.Intent;
-import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -11,10 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
-import static java.lang.Float.parseFloat;
+
 public class MainActivity2 extends AppCompatActivity {
     // Buttons definieren
     //
@@ -70,7 +68,7 @@ public class MainActivity2 extends AppCompatActivity {
         gspeciale = (TextView) findViewById(R.id.gspeciale);
         gpicante = (TextView) findViewById(R.id.gpicante);
         gmexicana = (TextView) findViewById(R.id.gmexicana);
-        preis = (Button) findViewById(R.id.preis);
+        preis = (Button) findViewById(R.id.wppreis);
         preis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/preis"
+        android:id="@+id/wppreis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -37,7 +37,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline25"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/preis" />
+        app:layout_constraintStart_toEndOf="@+id/wppreis" />
 
     <Button
         android:id="@+id/wunsch"
@@ -49,7 +49,7 @@
         android:textAllCaps="false"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/preis"
+        app:layout_constraintBaseline_toBaselineOf="@+id/wppreis"
         app:layout_constraintStart_toEndOf="@+id/gespreis" />
 
     <Button
