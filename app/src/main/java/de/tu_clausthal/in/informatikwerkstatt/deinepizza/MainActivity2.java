@@ -2,6 +2,7 @@ package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -9,33 +10,41 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity2 extends AppCompatActivity {
     // Buttons definieren
-    //
-    Button pl_sa, mi_sa, pl_ma, mi_ma, pl_ha, mi_ha, pl_veg, mi_veg, pl_spec, mi_spec, pl_pica, mi_pica, pl_mex, mi_mex, preis;
-    Button wunsch;
+    Button pl_sa, mi_sa, pl_ma, mi_ma, pl_ha, mi_ha, pl_veg, mi_veg, pl_spec, mi_spec, pl_pica, mi_pica, pl_mex, mi_mex, preis,warenkorb, wunsch;
     boolean pl_sat, mi_sat, pl_mat, mi_mat, pl_hat, mi_hat, pl_vegt, mi_vegt, pl_spect, mi_spect, pl_picat, mi_picat, pl_mext, mi_mext;
     EditText e_sa, e_ma, e_ha, e_veg, e_spec, e_pica, e_mex;
-    Spinner spin_sa, spin_ma, spin_ha, spin_veg, spin_spec, spin_pica, spin_mex, spin;
-    int quantity1 = 0;
-    int quantity2 = 0;
-    int quantity3 = 0;
-    int quantity4 = 0;
-    int quantity5 = 0;
-    int quantity6 = 0;
-    int quantity7 = 0;
+    Spinner spin_sa, spin_ma, spin_ha, spin_veg, spin_spec, spin_pica, spin_mex;
+    public int quantity1, quantity2, quantity3, quantity4, quantity5, quantity6, quantity7, quantity;
     float gespreis, preis1, preis2, preis3, preis4, preis5, preis6, preis7, preis_sa, preis_ma, preis_ha, preis_veg, preis_spec, preis_pica, preis_mex;
-    String item, item2, item3, item4, item5, item6, item7;
-    TextView gespreist, gsalami, gmargherita, ghawaii, gvegetaria, gspeciale, gpicante, gmexicana;
+    TextView gespreist,txtv_sa,txtv_ma,txtv_ha,txtv_veg,txtv_spec,txtv_pica,txtv_mex,
+            gsalami,gmargherita,ghawaii,gvegetaria,gspeciale,gpicante,gmexicana;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        // Variablen und Id Verbindungen
+
+        gsalami = (TextView) findViewById(R.id.gsalami);
+        gmargherita = (TextView) findViewById(R.id.gmargherita);
+        ghawaii = (TextView) findViewById(R.id.ghawaii);
+        gvegetaria = (TextView) findViewById(R.id.gvegetaria);
+        gspeciale = (TextView) findViewById(R.id.gspeciale);
+        gpicante = (TextView) findViewById(R.id.gpicante);
+        gmexicana = (TextView) findViewById(R.id.gmexicana);
+
+        txtv_sa = (TextView) findViewById(R.id.txtv_sa);
+        txtv_ma = (TextView) findViewById(R.id.txtv_ma);
+        txtv_ha = (TextView) findViewById(R.id.txtv_ha);
+        txtv_veg = (TextView) findViewById(R.id.txtv_veg);
+        txtv_spec = (TextView) findViewById(R.id.txtv_spec);
+        txtv_pica = (TextView) findViewById(R.id.txtv_pic);
+        txtv_mex = (TextView) findViewById(R.id.txtv_mex);
+
         pl_sa = (Button) findViewById(R.id.pl_sa);
         pl_ma = (Button) findViewById(R.id.pl_ma);
         pl_ha = (Button) findViewById(R.id.pl_ha);
@@ -59,16 +68,67 @@ public class MainActivity2 extends AppCompatActivity {
         e_spec = (EditText) findViewById(R.id.e_spec);
         e_pica = (EditText) findViewById(R.id.e_pica);
         e_mex = (EditText) findViewById(R.id.e_mex);
-        //Text veränderung
+
         gespreist = (TextView) findViewById(R.id.gespreis);
-        gsalami = (TextView) findViewById(R.id.gsalami);
-        gmargherita = (TextView) findViewById(R.id.gmargherita);
-        ghawaii = (TextView) findViewById(R.id.ghawaii);
-        gvegetaria = (TextView) findViewById(R.id.gvegetaria);
-        gspeciale = (TextView) findViewById(R.id.gspeciale);
-        gpicante = (TextView) findViewById(R.id.gpicante);
-        gmexicana = (TextView) findViewById(R.id.gmexicana);
-        preis = (Button) findViewById(R.id.wppreis);
+        preis = (Button) findViewById(R.id.preis);
+
+
+        wunsch = (Button)findViewById(R.id.wunsch);
+        wunsch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent wunschIntent = new Intent(MainActivity2.this, MainActivity3.class);
+                startActivity(wunschIntent);
+            }
+        });
+
+        warenkorb = (Button) findViewById(R.id.waren_korb);
+        warenkorb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intIntent = new Intent(getApplicationContext(), MainActivity4.class);
+                if (!TextUtils.isEmpty(e_sa.getText().toString()) && !e_sa.getText().toString().equals("0")) {
+                    intIntent.putExtra("quantity","x" + e_sa.getText().toString());
+                    intIntent.putExtra("sort", txtv_sa.getText());
+                    String spinText_sa = spin_sa.getSelectedItem().toString();
+                    intIntent.putExtra("grosse", spinText_sa);
+                }
+                if (!TextUtils.isEmpty(e_ma.getText().toString()) && !e_ma.getText().toString().equals("0")){
+                    intIntent.putExtra("quantity2","x" + e_ma.getText().toString());
+                    intIntent.putExtra("sort2", txtv_ma.getText());
+                    String spinText_ma = spin_ma.getSelectedItem().toString();
+                    intIntent.putExtra("grosse2", spinText_ma);
+                }
+                if (!TextUtils.isEmpty(e_ha.getText().toString()) && !e_ha.getText().toString().equals("0")){
+                    intIntent.putExtra("quantity3","x" + e_ha.getText().toString());
+                    intIntent.putExtra("sort3", txtv_ha.getText());
+                    String spinText_ha = spin_ha.getSelectedItem().toString();
+                    intIntent.putExtra("grosse3", spinText_ha);
+                }if (!TextUtils.isEmpty(e_veg.getText().toString()) && !e_veg.getText().toString().equals("0")){
+                    intIntent.putExtra("quantity4","x" + e_veg.getText().toString());
+                    intIntent.putExtra("sort4", txtv_veg.getText());
+                    String spinText_veg = spin_veg.getSelectedItem().toString();
+                    intIntent.putExtra("grosse4", spinText_veg);
+                }if (!TextUtils.isEmpty(e_spec.getText().toString()) && !e_spec.getText().toString().equals("0")){
+                    intIntent.putExtra("quantity5","x" + e_spec.getText().toString());
+                    intIntent.putExtra("sort5", txtv_spec.getText());
+                    String spinText_spec = spin_spec.getSelectedItem().toString();
+                    intIntent.putExtra("grosse5", spinText_spec);
+                }if (!TextUtils.isEmpty(e_pica.getText().toString()) && !e_pica.getText().toString().equals("0")){
+                    intIntent.putExtra("quantity6","x" + e_pica.getText().toString());
+                    intIntent.putExtra("sort6", txtv_pica.getText());
+                    String spinText_pica = spin_pica.getSelectedItem().toString();
+                    intIntent.putExtra("grosse6", spinText_pica);
+                }if (!TextUtils.isEmpty(e_mex.getText().toString()) && !e_mex.getText().toString().equals("0")){
+                    intIntent.putExtra("quantity7","x" + e_mex.getText().toString());
+                    intIntent.putExtra("sort7", txtv_mex.getText());
+                    String spinText_mex = spin_mex.getSelectedItem().toString();
+                    intIntent.putExtra("grosse7", spinText_mex);
+                }
+                startActivity(intIntent);
+            }
+        });
+
         preis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -189,7 +249,7 @@ public class MainActivity2 extends AppCompatActivity {
                 display(quantity7);
             }
         });
-        //Spinner Salami definieren
+        //Spinner definieren
         spin_sa = (Spinner) findViewById(R.id.spin_sa);
         //Die Liste von Elementen im Spinner
         List<String> list = new ArrayList<>();
@@ -206,13 +266,13 @@ public class MainActivity2 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 if (spin_sa.getSelectedItem().toString().trim().equals("S")) {
-                    preis1 = (float) 3.20;
+                    preis1 = (float) 3.90;
 
                 }if (spin_sa.getSelectedItem().toString().trim().equals("M")) {
-                    preis1 = (float)5.90;
+                    preis1 = (float)6.90;
 
                 }if (spin_sa.getSelectedItem().toString().trim().equals("L")) {
-                    preis1 = (float) 7.90;
+                    preis1 = (float) 8.90;
                 }
                 gsalami.setText(String.valueOf(preis1) + "€");
             }
@@ -220,7 +280,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner Margherita definieren
+        //Spinner definieren
         spin_ma = (Spinner) findViewById(R.id.spin_ma);
         //Die Liste von Elementen im Spinner
         List<String> list2 = new ArrayList<>();
@@ -250,7 +310,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner Hawaii definieren
+        //Spinner definieren
         spin_ha = (Spinner) findViewById(R.id.spin_ha);
         //Die Liste von Elementen im Spinner
         List<String> list3 = new ArrayList<>();
@@ -266,9 +326,9 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent3, View view3, int position3, long id3) {
                 if (spin_ha.getSelectedItem().toString().trim().equals("S")) {
-                    preis3 = (float) 3.90;
+                    preis3 = (float) 4.50;
                 }if (spin_ha.getSelectedItem().toString().trim().equals("M")) {
-                    preis3 = (float) 6.50;
+                    preis3 = (float) 6.70;
                 }if (spin_ha.getSelectedItem().toString().trim().equals("L")) {
                     preis3 = (float) 8.90;
                 }
@@ -278,7 +338,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner Vegetaria definieren
+        //Spinner definieren
         spin_veg = (Spinner) findViewById(R.id.spin_veg);
         //Die Liste von Elementen im Spinner
         List<String> list4 = new ArrayList<>();
@@ -299,10 +359,8 @@ public class MainActivity2 extends AppCompatActivity {
                 }if (spin_veg.getSelectedItem().toString().trim().equals("M")) {
                     preis4 = (float) 6.90;
 
-
                 }if (spin_veg.getSelectedItem().toString().trim().equals("L")) {
                     preis4 = (float) 9.50;
-
                 }
                 gvegetaria.setText(String.valueOf(preis4) + "€");
             }
@@ -310,7 +368,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner Speciale definieren
+        //Spinner definieren
         spin_spec = (Spinner) findViewById(R.id.spin_spec);
         //Die Liste von Elementen im Spinner
         List<String> list5 = new ArrayList<>();
@@ -326,14 +384,11 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent5, View view5, int position5, long id5) {
                 if (spin_spec.getSelectedItem().toString().trim().equals("S")) {
-                    preis5 = (float) 4.20;
-
+                    preis5 = (float) 4.90;
                 }if (spin_spec.getSelectedItem().toString().trim().equals("M")) {
-                    preis5 = (float) 6.50;
-
+                    preis5 = (float) 6.90;
                 }if (spin_spec.getSelectedItem().toString().trim().equals("L")) {
-                    preis5 = (float) 8.50;
-
+                    preis5 = (float) 9.50;
                 }
                 gspeciale.setText(String.valueOf(preis5) + "€");
             }
@@ -341,7 +396,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner Picante definieren
+        //Spinner definieren
         spin_pica = (Spinner) findViewById(R.id.spin_pica);
         //Die Liste von Elementen im Spinner
         List<String> list6 = new ArrayList<>();
@@ -358,15 +413,12 @@ public class MainActivity2 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent6, View view6, int position6, long id6) {
                 if (spin_pica.getSelectedItem().toString().trim().equals("S")) {
                     preis6 = (float) 4.90;
-
-
                 }
                 if (spin_pica.getSelectedItem().toString().trim().equals("M")) {
                     preis6 = (float) 6.90;
-
                 }
                 if (spin_pica.getSelectedItem().toString().trim().equals("L")) {
-                    preis6 = (float) 9.90;
+                    preis6 = (float) 9.50;
                 }
                 gpicante.setText(String.valueOf(preis6) + "€");
             }
@@ -374,7 +426,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner Mexicana definieren
+        //Spinner definieren
         spin_mex = (Spinner) findViewById(R.id.spin_mex);
         //Die Liste von Elementen im Spinner
         List<String> list7 = new ArrayList<>();
@@ -390,14 +442,11 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent7, View view7, int position7, long id7) {
                 if (spin_mex.getSelectedItem().toString().trim().equals("S")) {
-                    preis7 = (float) 4.50;
-
+                    preis7 = (float) 4.90;
                 }if (spin_mex.getSelectedItem().toString().trim().equals("M")) {
-                    preis7 = (float) 7.50;
-
+                    preis7 = (float) 6.90;
                 }if (spin_mex.getSelectedItem().toString().trim().equals("L")) {
                     preis7 = (float) 9.50;
-
                 }
                 gmexicana.setText(String.valueOf(preis7) + "€");
             }
@@ -405,19 +454,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-
-
-        wunsch = (Button) findViewById(R.id.wunsch);
-        wunsch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMainActivity3();
-            }
-        });
-
-
     }
-    // Anzahl an Pizzen +1
     public void increment (int view) {
         if (pl_sat == true) {
             quantity1 = quantity1 + 1;
@@ -435,7 +472,6 @@ public class MainActivity2 extends AppCompatActivity {
             quantity7 = quantity7 + 1;
         }
     }
-    // Anzahl an pizzen -1
     public void decrement (int view) {
         if (quantity1 >0 && mi_sat == true){
             quantity1 = quantity1 - 1;
@@ -458,6 +494,7 @@ public class MainActivity2 extends AppCompatActivity {
             e_sa.setText("" + number);
             pl_sat = false;
             mi_sat = false;
+
         }else if (pl_mat == true || mi_mat == true){
             e_ma.setText("" + number);
             pl_mat = false;
@@ -484,24 +521,15 @@ public class MainActivity2 extends AppCompatActivity {
             mi_mext = false;
         }
     }
-
-    // Berechnung des Gesamtpreises
     public void gesamtpreis () {
         preis_sa = quantity1 * preis1;
         preis_ma = quantity2 * preis2;
         preis_ha = quantity3 * preis3;
-        preis_veg =quantity4 * preis4;
+        preis_veg = quantity4 * preis4;
         preis_spec = quantity5 * preis5;
         preis_pica = quantity6 * preis6;
         preis_mex = quantity7 * preis7;
         gespreis = preis_sa + preis_ma + preis_ha + preis_veg + preis_spec + preis_pica + preis_mex;
-        gespreist.setText(String.valueOf(gespreis) + "€");
+        gespreist.setText(String.format("%.2f",gespreis)+ "€");
     }
-    // 3 Activity, um die neue Seite zu öffnen
-    public void openMainActivity3 () {
-        Intent intent2 = new Intent( this, MainActivity3.class);
-        startActivity(intent2);
-
-    }
-
 }

@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5DEB3"
     tools:context=".MainActivity2">
 
 
     <Button
-        android:id="@+id/wppreis"
+        android:id="@+id/preis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -37,7 +38,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline25"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/wppreis" />
+        app:layout_constraintStart_toEndOf="@+id/preis" />
 
     <Button
         android:id="@+id/wunsch"
@@ -49,21 +50,20 @@
         android:textAllCaps="false"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/wppreis"
+        app:layout_constraintBaseline_toBaselineOf="@+id/preis"
         app:layout_constraintStart_toEndOf="@+id/gespreis" />
 
     <Button
-        android:id="@+id/bestellung"
+        android:id="@+id/waren_korb"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/bestellung"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/wunsch"
+        android:text="Warenkorb"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/wunsch" />
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -114,7 +114,7 @@
                     app:srcCompat="@drawable/salami" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/txtv_sa"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -135,8 +135,8 @@
 
                 <Button
                     android:id="@+id/pl_sa"
-                    android:layout_width="70dp"
-                    android:layout_height="37dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
@@ -165,8 +165,8 @@
 
                 <Button
                     android:id="@+id/mi_sa"
-                    android:layout_width="70dp"
-                    android:layout_height="41dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     android:text="-"
@@ -275,7 +275,7 @@
                     app:srcCompat="@drawable/marg" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/txtv_ma"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -295,8 +295,8 @@
 
                 <Button
                     android:id="@+id/pl_ma"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -325,8 +325,8 @@
 
                 <Button
                     android:id="@+id/mi_ma"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -430,7 +430,7 @@
                     app:srcCompat="@drawable/hawaii" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/txtv_ha"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -451,8 +451,8 @@
 
                 <Button
                     android:id="@+id/pl_ha"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -481,8 +481,8 @@
 
                 <Button
                     android:id="@+id/mi_ha"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -582,7 +582,7 @@
                     app:srcCompat="@drawable/veg" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/txtv_veg"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -601,8 +601,8 @@
 
                 <Button
                     android:id="@+id/pl_veg"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -629,8 +629,8 @@
 
                 <Button
                     android:id="@+id/mi_veg"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -716,7 +716,7 @@
                 android:layout_height="230dp">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/txtv_spec"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -736,8 +736,8 @@
 
                 <Button
                     android:id="@+id/pl_spec"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -764,8 +764,8 @@
 
                 <Button
                     android:id="@+id/mi_spec"
-                    android:layout_width="69dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -883,7 +883,7 @@
                     app:srcCompat="@drawable/picante1" />
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/txtv_pic"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -897,14 +897,15 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/e_pica"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/guideline19"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.059" />
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <Button
                     android:id="@+id/pl_pica"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -931,8 +932,8 @@
 
                 <Button
                     android:id="@+id/mi_pica"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -1035,7 +1036,7 @@
                     app:srcCompat="@drawable/mexicana" />
 
                 <TextView
-                    android:id="@+id/textView16"
+                    android:id="@+id/txtv_mex"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -1056,8 +1057,8 @@
 
                 <Button
                     android:id="@+id/pl_mex"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -1084,8 +1085,8 @@
 
                 <Button
                     android:id="@+id/mi_mex"
-                    android:layout_width="70dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -1197,7 +1198,6 @@
         android:layout_marginEnd="4dp"
         android:fontFamily="serif"
         android:text="@string/slogan"
-        android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold|italic"

@@ -25,11 +25,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/wppreis"
+        android:id="@+id/preis2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
         android:text="Preis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -41,7 +40,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/wppreis"
+        app:layout_constraintBottom_toTopOf="@+id/preis2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -187,7 +186,8 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        android:text="€"
+                        android:text="0.15€"
+                        android:textColor="@android:color/black"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline32"
                         app:layout_constraintStart_toStartOf="parent" />
@@ -580,11 +580,17 @@
 
                     <ImageView
                         android:id="@+id/Iknoblauch"
-                        android:layout_width="174dp"
-                        android:layout_height="118dp"
-                        app:srcCompat="@drawable/knoblauch"
-                        tools:layout_editor_absoluteX="8dp"
-                        tools:layout_editor_absoluteY="8dp" />
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/knoblauch"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline31"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/knoblauch" />
 
                     <CheckBox
                         android:id="@+id/knoblauch"
@@ -994,10 +1000,11 @@
         android:id="@+id/euro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="€"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/wppreis"
-        app:layout_constraintStart_toEndOf="@+id/wppreis" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/preis2" />
 
 </android.support.constraint.ConstraintLayout>

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DeinePizza.iml" filepath="$PROJECT_DIR$/DeinePizza.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Virtueller-Lieferdienst-App.iml" filepath="$PROJECT_DIR$/Virtueller-Lieferdienst-App.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
