@@ -13,32 +13,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-<<<<<<< HEAD
         android:layout_marginTop="904dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/roundedbutton3"
-=======
-        android:layout_marginEnd="8dp"
->>>>>>> origin/master
         android:text="@string/preis"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="18sp"
         android:textStyle="bold"
-<<<<<<< HEAD
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
-=======
-        app:layout_constraintBaseline_toBaselineOf="@+id/gespreis"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
->>>>>>> origin/master
 
     <TextView
         android:id="@+id/gespreis"
@@ -52,18 +41,12 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.043"
-=======
-        app:layout_constraintEnd_toStartOf="@+id/guideline25"
-        app:layout_constraintHorizontal_bias="0.0"
->>>>>>> origin/master
         app:layout_constraintStart_toEndOf="@+id/preis" />
 
     <Button
         android:id="@+id/wunsch"
-<<<<<<< HEAD
         android:layout_width="111dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -71,17 +54,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/roundedbutton3"
-=======
-        android:layout_width="wrap_content"
-        android:layout_height="51dp"
-        android:layout_marginStart="8dp"
->>>>>>> origin/master
         android:text="@string/wp"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="16sp"
         android:textStyle="bold"
-<<<<<<< HEAD
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,22 +80,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.99" />
-=======
-        app:layout_constraintBaseline_toBaselineOf="@+id/preis"
-        app:layout_constraintStart_toEndOf="@+id/gespreis" />
-
-    <Button
-        android:id="@+id/waren_korb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Warenkorb"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.983"
-        app:layout_constraintStart_toStartOf="parent" />
->>>>>>> origin/master
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -138,11 +99,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-<<<<<<< HEAD
             android:layout_height="wrap_content"
-=======
-            android:layout_height="match_parent"
->>>>>>> origin/master
             android:orientation="vertical">
 
             <Space
@@ -199,10 +156,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="+"
                     android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
                     app:layout_constraintBottom_toTopOf="@+id/mi_sa"
@@ -232,10 +186,7 @@
                     android:layout_height="50dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="-"
                     android:textAlignment="center"
                     android:textAllCaps="false"
@@ -302,27 +253,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-<<<<<<< HEAD
                     android:layout_marginEnd="124dp"
                     android:layout_marginBottom="8dp"
-=======
-                    android:layout_marginEnd="8dp"
->>>>>>> origin/master
                     android:text="€"
                     android:textAlignment="viewEnd"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:visibility="visible"
-<<<<<<< HEAD
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.289" />
-=======
-                    app:layout_constraintEnd_toEndOf="@+id/imageView"
-                    app:layout_constraintTop_toTopOf="@+id/imageView" />
->>>>>>> origin/master
 
             </android.support.constraint.ConstraintLayout>
 
@@ -380,10 +322,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="+"
                     app:layout_constraintBottom_toTopOf="@+id/mi_ma"
                     app:layout_constraintEnd_toStartOf="@+id/guideline10"
@@ -414,10 +353,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="-"
                     app:layout_constraintBottom_toTopOf="@+id/guideline8"
                     app:layout_constraintEnd_toStartOf="@+id/guideline10"
@@ -479,27 +415,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-<<<<<<< HEAD
                     android:layout_marginEnd="124dp"
                     android:layout_marginBottom="8dp"
-=======
-                    android:layout_marginEnd="8dp"
->>>>>>> origin/master
                     android:text="€"
                     android:textAlignment="viewEnd"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:visibility="visible"
-<<<<<<< HEAD
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.289" />
-=======
-                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
-                    app:layout_constraintTop_toTopOf="@+id/imageView3" />
->>>>>>> origin/master
 
             </android.support.constraint.ConstraintLayout>
 
@@ -516,11 +443,7 @@
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="0dp"
-<<<<<<< HEAD
                     android:layout_height="190dp"
-=======
-                    android:layout_height="0dp"
->>>>>>> origin/master
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
@@ -560,10 +483,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="+"
                     app:layout_constraintBottom_toTopOf="@+id/mi_ha"
                     app:layout_constraintEnd_toStartOf="@+id/guideline12"
@@ -594,10 +514,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="-"
                     app:layout_constraintBottom_toTopOf="@+id/guideline13"
                     app:layout_constraintEnd_toStartOf="@+id/guideline12"
@@ -659,26 +576,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-<<<<<<< HEAD
                     android:layout_marginEnd="124dp"
                     android:layout_marginBottom="8dp"
-=======
-                    android:layout_marginEnd="8dp"
->>>>>>> origin/master
                     android:text="€"
                     android:textAlignment="viewEnd"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
-<<<<<<< HEAD
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.289" />
-=======
-                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
-                    app:layout_constraintTop_toTopOf="@+id/imageView4" />
->>>>>>> origin/master
             </android.support.constraint.ConstraintLayout>
 
             <Space
@@ -729,10 +637,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="+"
                     app:layout_constraintBottom_toTopOf="@+id/mi_veg"
                     app:layout_constraintEnd_toStartOf="@+id/guideline15"
@@ -761,10 +666,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="-"
                     app:layout_constraintBottom_toTopOf="@+id/guideline14"
                     app:layout_constraintEnd_toStartOf="@+id/guideline15"
@@ -826,27 +728,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-<<<<<<< HEAD
                     android:layout_marginEnd="124dp"
                     android:layout_marginBottom="8dp"
-=======
-                    android:layout_marginEnd="8dp"
->>>>>>> origin/master
                     android:text="€"
                     android:textAlignment="viewEnd"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:visibility="visible"
-<<<<<<< HEAD
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.278" />
-=======
-                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toTopOf="@+id/imageView2" />
->>>>>>> origin/master
 
             </android.support.constraint.ConstraintLayout>
 
@@ -884,10 +777,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="+"
                     app:layout_constraintBottom_toTopOf="@+id/mi_spec"
                     app:layout_constraintEnd_toStartOf="@+id/guideline17"
@@ -916,10 +806,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="-"
                     app:layout_constraintBottom_toTopOf="@+id/guideline18"
                     app:layout_constraintEnd_toStartOf="@+id/guideline17"
@@ -997,27 +884,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-<<<<<<< HEAD
                     android:layout_marginEnd="124dp"
                     android:layout_marginBottom="8dp"
-=======
-                    android:layout_marginEnd="8dp"
->>>>>>> origin/master
                     android:text="€"
                     android:textAlignment="viewEnd"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:visibility="visible"
-<<<<<<< HEAD
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.294" />
-=======
-                    app:layout_constraintEnd_toEndOf="@+id/imageView8"
-                    app:layout_constraintTop_toTopOf="@+id/imageView8" />
->>>>>>> origin/master
 
             </android.support.constraint.ConstraintLayout>
 
@@ -1072,10 +950,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="+"
                     app:layout_constraintBottom_toTopOf="@+id/mi_pica"
                     app:layout_constraintEnd_toStartOf="@+id/guideline20"
@@ -1104,10 +979,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="-"
                     app:layout_constraintBottom_toTopOf="@+id/guideline21"
                     app:layout_constraintEnd_toStartOf="@+id/guideline20"
@@ -1169,27 +1041,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-<<<<<<< HEAD
                     android:layout_marginEnd="124dp"
                     android:layout_marginBottom="8dp"
-=======
-                    android:layout_marginEnd="8dp"
->>>>>>> origin/master
                     android:text="€"
                     android:textAlignment="viewEnd"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:visibility="visible"
-<<<<<<< HEAD
                     app:layout_constraintBottom_toTopOf="@+id/guideline21"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.368" />
-=======
-                    app:layout_constraintEnd_toEndOf="@+id/imageView10"
-                    app:layout_constraintTop_toTopOf="@+id/imageView10" />
->>>>>>> origin/master
             </android.support.constraint.ConstraintLayout>
 
             <Space
@@ -1245,10 +1108,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="+"
                     app:layout_constraintBottom_toTopOf="@+id/mi_mex"
                     app:layout_constraintEnd_toStartOf="@+id/guideline24"
@@ -1277,10 +1137,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-<<<<<<< HEAD
                     android:background="@drawable/roundedbutton"
-=======
->>>>>>> origin/master
                     android:text="-"
                     app:layout_constraintBottom_toTopOf="@+id/guideline22"
                     app:layout_constraintEnd_toStartOf="@+id/guideline24"
@@ -1341,27 +1198,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-<<<<<<< HEAD
                     android:layout_marginEnd="124dp"
                     android:layout_marginBottom="8dp"
-=======
-                    android:layout_marginEnd="8dp"
->>>>>>> origin/master
                     android:text="€"
                     android:textAlignment="viewEnd"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:visibility="visible"
-<<<<<<< HEAD
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.305" />
-=======
-                    app:layout_constraintEnd_toEndOf="@+id/imageView11"
-                    app:layout_constraintTop_toTopOf="@+id/imageView11" />
->>>>>>> origin/master
 
             </android.support.constraint.ConstraintLayout>
 
