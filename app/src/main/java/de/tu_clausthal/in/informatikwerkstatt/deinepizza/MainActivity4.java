@@ -1,15 +1,13 @@
-package de.tu_clausthal.in.informatikwerkstatt.virtueller_lieferdienst_app;
+package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 
-public class ShoppingCartActivity extends AppCompatActivity {
+public class MainActivity4 extends AppCompatActivity {
     TextView Pizza_sort,Pizza_sort2,Pizza_sort3,Pizza_sort4,Pizza_sort5,Pizza_sort6,Pizza_sort7,
             Pizza_quantity,Pizza_quantity2,Pizza_quantity3,Pizza_quantity4,Pizza_quantity5,
             Pizza_quantity6,Pizza_quantity7,Pizza_grosse,Pizza_grosse2,Pizza_grosse3,Pizza_grosse4,Pizza_grosse5,Pizza_grosse6,Pizza_grosse7;
@@ -19,12 +17,12 @@ public class ShoppingCartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shopping_cart);
+        setContentView(R.layout.activity_main4);
         liefern = (Button) findViewById(R.id.liefern1);
         liefern.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent liefernIntent = new Intent(ShoppingCartActivity.this, LiefernActivity.class);
+                Intent liefernIntent = new Intent(MainActivity4.this, MainActivity5.class);
                 startActivity(liefernIntent);
             }
         });

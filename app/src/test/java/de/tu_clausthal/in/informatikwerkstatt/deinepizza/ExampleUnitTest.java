@@ -1,4 +1,4 @@
-package de.tu_clausthal.in.informatikwerkstatt.virtueller_lieferdienst_app;
+package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
 
 import org.junit.Test;
 

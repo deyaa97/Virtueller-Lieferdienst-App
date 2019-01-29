@@ -1,7 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Deine Pizza</string>
     <string name="werbe">Egal wo du bist, deine Pizza wird zu dir geliefert!</string>
-    <string name="preis" tools:ignore="ExtraTranslation">Preis:</string>
+    <string name="preis">Preis:</string>
     <string name="pizza_salami">Pizza Salami</string>
     <string name="t_k_s">Tomatensoße, Käse und Salami</string>
     <string name="pizza_margherita">Pizza Margherita</string>
@@ -42,7 +42,6 @@
     <string name="grosse">Größe</string>
     <string name="bestellung">Bestellen</string>
     <string name="klein">Klein</string>
-    <string name="Preis2">Preis2</string>
 
 
 </resources>

@@ -1,4 +1,4 @@
-package de.tu_clausthal.in.informatikwerkstatt.virtueller_lieferdienst_app;
+package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("de.tu_clausthal.in.informatikwerkstatt.virtueller_lieferdienst_app", appContext.getPackageName());
+        assertEquals("de.tu_clausthal.in.informatikwerkstatt.deinepizza", appContext.getPackageName());
     }
 }

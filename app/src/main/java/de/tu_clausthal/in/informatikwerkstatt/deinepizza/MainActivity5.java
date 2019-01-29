@@ -1,4 +1,5 @@
-package de.tu_clausthal.in.informatikwerkstatt.virtueller_lieferdienst_app;
+package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

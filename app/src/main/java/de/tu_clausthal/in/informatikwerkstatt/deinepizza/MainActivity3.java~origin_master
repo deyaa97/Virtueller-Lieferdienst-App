@@ -1,5 +1,5 @@
-package de.tu_clausthal.in.informatikwerkstatt.virtueller_lieferdienst_app;
-import android.content.Intent;
+package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +10,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 
-public class WunschPizzaActivity extends AppCompatActivity {
+public class MainActivity3 extends AppCompatActivity {
 
     RadioGroup radiog;
     RadioButton kleinR, grossR, familieR;
@@ -22,7 +22,7 @@ public class WunschPizzaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wunsch_pizza);
+        setContentView(R.layout.activity_main3);
         euro = (TextView)findViewById(R.id.euro);
         radiog = (RadioGroup) findViewById(R.id.radiog);
         kleinR = (RadioButton) findViewById(R.id.kleinR);

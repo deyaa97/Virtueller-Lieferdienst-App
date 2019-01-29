@@ -1,4 +1,4 @@
-package de.tu_clausthal.in.informatikwerkstatt.virtueller_lieferdienst_app;
+package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,7 +12,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
-public class HomeActivity extends AppCompatActivity {
+
+public class MainActivity2 extends AppCompatActivity {
     // Buttons definieren
     Button pl_sa, mi_sa, pl_ma, mi_ma, pl_ha, mi_ha, pl_veg, mi_veg, pl_spec, mi_spec, pl_pica, mi_pica, pl_mex, mi_mex, preis,warenkorb, wunsch;
     boolean pl_sat, mi_sat, pl_mat, mi_mat, pl_hat, mi_hat, pl_vegt, mi_vegt, pl_spect, mi_spect, pl_picat, mi_picat, pl_mext, mi_mext;
@@ -26,7 +27,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_main2);
 
         gsalami = (TextView) findViewById(R.id.gsalami);
         gmargherita = (TextView) findViewById(R.id.gmargherita);
@@ -76,7 +77,7 @@ public class HomeActivity extends AppCompatActivity {
         wunsch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent wunschIntent = new Intent(HomeActivity.this, WunschPizzaActivity.class);
+                Intent wunschIntent = new Intent(MainActivity2.this, MainActivity3.class);
                 startActivity(wunschIntent);
             }
         });
@@ -85,7 +86,7 @@ public class HomeActivity extends AppCompatActivity {
         warenkorb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intIntent = new Intent(getApplicationContext(), ShoppingCartActivity.class);
+                Intent intIntent = new Intent(getApplicationContext(), MainActivity4.class);
                 if (!TextUtils.isEmpty(e_sa.getText().toString()) && !e_sa.getText().toString().equals("0")) {
                     intIntent.putExtra("quantity","x" + e_sa.getText().toString());
                     intIntent.putExtra("sort", txtv_sa.getText());
