@@ -1,4 +1,5 @@
-package de.tu_clausthal.in.informatikwerkstatt.virtueller_lieferdienst_app;
+package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,14 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class LiefernActivity extends AppCompatActivity {
+public class MainActivity5 extends AppCompatActivity {
     EditText editTextVorname, editTextNachname, editTextAdresse;
     Button button_bestellen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_liefern);
+        setContentView(R.layout.activity_main5);
 
         editTextVorname = (EditText) findViewById(R.id.vorname);
         editTextNachname = (EditText) findViewById(R.id.nachname);
@@ -29,7 +30,7 @@ public class LiefernActivity extends AppCompatActivity {
         button_bestellen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LiefernActivity.this, PopUpActivity.class));
+                startActivity(new Intent(MainActivity5.this, MainActivity6.class));
             }
         });
     }
