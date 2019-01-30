@@ -30,6 +30,6 @@ public class MainActivity6 extends AppCompatActivity {
         int width = dm.widthPixels;
         int height = dm.heightPixels;
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        getWindow().setLayout((int) (width*.8), (int)(height*.3));
+        getWindow().setLayout((int) (width*.8), (int)(height*.4));
     }
 }

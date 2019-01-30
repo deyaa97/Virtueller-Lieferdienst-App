@@ -15,7 +15,7 @@ public class MainActivity3 extends AppCompatActivity {
     RadioGroup radiog;
     RadioButton kleinR, grossR, familieR;
     CheckBox annanas, basilikum, brokkoli, champignon, chili, spinat, thunfisch, tomate, fetakaese, knoblauch, mais, oliven, morzarella, haenchen, gorgonzola, salami, schinken, redonion;
-    float gpreis, preis = (float) 5.5, grosse, gannanas, gbasilikum, gbrokkoli, gchampignon, gchili, gspinat, gthunfisch, gtomate, gfetakaese, gknoblauch, gmais, goliven, gmorzarella, gchicken, ggorgonzola, gsalami, gschinken, gredonion;
+    float gpreis, preis, grosse, gannanas, gbasilikum, gbrokkoli, gchampignon, gchili, gspinat, gthunfisch, gtomate, gfetakaese, gknoblauch, gmais, goliven, gmorzarella, gchicken, ggorgonzola, gsalami, gschinken, gredonion;
     TextView euro ,pannanas, pbasilikum, pbrokkoli, pchampignon, pchili, pspinat, pthunfisch, ptomate, pfetakaese, pknoblauch, pmais, poliven, pmorzarella, pchicken, pgorgonzola, psalami, pschinken, predonion;
     Button preis1;
 
@@ -74,7 +74,7 @@ public class MainActivity3 extends AppCompatActivity {
         kleinR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                grosse = (float) 0.7;
+                preis = (float) 4.5;
                 pannanas.setText("0.50€");
                 pbasilikum.setText("0.40€");
                 pbrokkoli.setText("0.40€");
@@ -98,7 +98,7 @@ public class MainActivity3 extends AppCompatActivity {
         grossR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                grosse = (float) 1;
+                preis = (float) 6.5;
                 pannanas.setText("0.80 €");
                 pbasilikum.setText("0.70€");
                 pbrokkoli.setText("0.70€");
@@ -122,7 +122,7 @@ public class MainActivity3 extends AppCompatActivity {
         familieR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                grosse = (float) 1.4;
+                preis = (float) 9.5;
                 pannanas.setText("1.20");
                 pbasilikum.setText("0.90€");
                 pbrokkoli.setText("1.00€");
