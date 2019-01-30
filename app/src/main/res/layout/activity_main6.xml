@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pop_up_rounded"
+    android:background="@android:color/white"
     tools:context=".MainActivity6">
 
 
@@ -18,7 +18,10 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="wird in 15 min geliefert !!"
+        android:fontFamily="serif"
+        android:text="Vielen Dank!
+        Deine Bestellung wird in 15 min geliefert"
+        android:textAlignment="center"
         android:textSize="28sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
