@@ -1003,12 +1003,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="464dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="28dp"
         android:text="€"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintHorizontal_bias="0.961"
         app:layout_constraintStart_toEndOf="@+id/preis2" />
 
 </android.support.constraint.ConstraintLayout>

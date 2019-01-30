@@ -75,72 +75,72 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 grosse = (float) 0.7;
-                pannanas.setText("0.05€");
-                pbasilikum.setText("0.05€");
-                pbrokkoli.setText("0.10€");
-                pchampignon.setText("0.10€");
-                pchili.setText("0.05€");
-                pspinat.setText("0.12€");
-                pthunfisch.setText("0.05€");
-                ptomate.setText("0.10€");
-                pfetakaese.setText("0.05€");
+                pannanas.setText("0.50€");
+                pbasilikum.setText("0.40€");
+                pbrokkoli.setText("0.40€");
+                pchampignon.setText("0.70€");
+                pchili.setText("0.10€");
+                pspinat.setText("0.50€");
+                pthunfisch.setText("0.60€");
+                ptomate.setText("0.50€");
+                pfetakaese.setText("0.80€");
                 pknoblauch.setText("0.20€");
-                pmais.setText("0.20€");
-                poliven.setText("0.25€");
-                pmorzarella.setText("0.15€");
-                pchicken.setText("0.15€");
-                pgorgonzola.setText("0.20€");
-                psalami.setText("0.05€");
-                pschinken.setText("0.08€");
-                predonion.setText("0.05€");
+                pmais.setText("0.50€");
+                poliven.setText("0.60€");
+                pmorzarella.setText("0.60€");
+                pchicken.setText("1.00€");
+                pgorgonzola.setText("0.80€");
+                psalami.setText("0.60€");
+                pschinken.setText("0.60€");
+                predonion.setText("0.50€");
             }
         });
         grossR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 grosse = (float) 1;
-                pannanas.setText("0.10 €");
-                pbasilikum.setText("0.08€");
-                pbrokkoli.setText("0.15€");
-                pchampignon.setText("0.15€");
-                pchili.setText("0.10€");
-                pspinat.setText("0.18€");
-                pthunfisch.setText("0.08€");
-                ptomate.setText("0.15€");
-                pfetakaese.setText("0.08€");
-                pknoblauch.setText("0.25€");
-                pmais.setText("0.25€");
-                poliven.setText("0.30€");
-                pmorzarella.setText("0.20€");
+                pannanas.setText("0.80 €");
+                pbasilikum.setText("0.70€");
+                pbrokkoli.setText("0.70€");
+                pchampignon.setText("1.00€");
+                pchili.setText("0.30€");
+                pspinat.setText("0.80€");
+                pthunfisch.setText("1.00€");
+                ptomate.setText("0.80€");
+                pfetakaese.setText("1.20€");
+                pknoblauch.setText("0.35€");
+                pmais.setText("0.85€");
+                poliven.setText("0.90€");
+                pmorzarella.setText("1.00€");
                 pchicken.setText("0.19€");
-                pgorgonzola.setText("0.25€");
-                psalami.setText("0.09€");
-                pschinken.setText("0.10€");
-                predonion.setText("0.08€");
+                pgorgonzola.setText("1.20€");
+                psalami.setText("1.00€");
+                pschinken.setText("1.00€");
+                predonion.setText("0.80€");
             }
         });
         familieR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 grosse = (float) 1.4;
-                pannanas.setText("0.15");
-                pbasilikum.setText("0.10€");
-                pbrokkoli.setText("0.20€");
-                pchampignon.setText("0.17€");
-                pchili.setText("0.12€");
-                pspinat.setText("0.21€");
-                pthunfisch.setText("0.12€");
-                ptomate.setText("0.17€");
-                pfetakaese.setText("0.10€");
-                pknoblauch.setText("0.27€");
-                pmais.setText("0.30€");
-                poliven.setText("0.35€");
-                pmorzarella.setText("0.25€");
-                pchicken.setText("0.22€");
-                pgorgonzola.setText("0.30€");
-                psalami.setText("0.13€");
-                pschinken.setText("0.15€");
-                predonion.setText("0.10€");
+                pannanas.setText("1.20");
+                pbasilikum.setText("0.90€");
+                pbrokkoli.setText("1.00€");
+                pchampignon.setText("1.30€");
+                pchili.setText("0.50€");
+                pspinat.setText("1.10€");
+                pthunfisch.setText("1.40€");
+                ptomate.setText("1.10€");
+                pfetakaese.setText("1.60€");
+                pknoblauch.setText("0.50€");
+                pmais.setText("1.10€");
+                poliven.setText("1.30€");
+                pmorzarella.setText("1.35€");
+                pchicken.setText("2.00€");
+                pgorgonzola.setText("1.60€");
+                psalami.setText("1.40€");
+                pschinken.setText("1.40€");
+                predonion.setText("1.10€");
             }
         });
         preis1=(Button) findViewById(R.id.preis2);
@@ -151,88 +151,88 @@ public class MainActivity3 extends AppCompatActivity {
                 {
                     if (kleinR.isChecked())
                     {
-                        gannanas = (float) 0.05;
+                        gannanas = (float) 0.50;
                     }if (grossR.isChecked()){
-                    gannanas = (float) 0.10;
+                    gannanas = (float) 0.80;
                 }if (familieR.isChecked()){
-                    gannanas = (float) 0.15;
+                    gannanas = (float) 1.20;
                 }
                 }else{
                     gannanas = 0;
                 }if (brokkoli.isChecked())
                 {
                     if (kleinR.isChecked()){
-                        gbrokkoli = (float) 0.10;
+                        gbrokkoli = (float) 0.40;
                     }if (grossR.isChecked()){
-                    gbrokkoli = (float) 0.15;
+                    gbrokkoli = (float) 0.70;
                 }if (familieR.isChecked()){
-                    gbrokkoli = (float) 0.20;
+                    gbrokkoli = (float) 1.00;
                 }
                 }else{
                     gbrokkoli = 0;
                 }if (basilikum.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gbasilikum = (float)0.05;
+                        gbasilikum = (float)0.40;
                     }if (grossR.isChecked()){
-                    gbasilikum = (float)0.08;
+                    gbasilikum = (float)0.70;
                 }if (familieR.isChecked()){
-                    gbasilikum = (float)0.10;
+                    gbasilikum = (float)0.90;
                 }
                 }else{
                     gbasilikum = 0;
                 }if (chili.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gchili = (float) 0.05;
+                        gchili = (float) 0.10;
                     }if (grossR.isChecked()){
-                    gchili = (float)0.10;
+                    gchili = (float)0.30;
                 }if (familieR.isChecked()){
-                    gchili = (float) 0.12;
+                    gchili = (float) 0.50;
                 }
                 }else{
                     gchili = 0;
                 }if (champignon.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gchampignon = (float)0.10;
+                        gchampignon = (float)0.70;
                     }if (grossR.isChecked()){
-                    gchampignon = (float)0.15;
+                    gchampignon = (float)1.00;
                 }if (familieR.isChecked()){
-                    gchampignon = (float)0.17;
+                    gchampignon = (float)1.30;
                 }
                 }else{
                     gchampignon = 0;
                 }if (fetakaese.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gfetakaese = (float) 0.05;
+                        gfetakaese = (float) 0.80;
                     }if (grossR.isChecked()){
-                    gfetakaese = (float) 0.08;
+                    gfetakaese = (float) 1.20;
                 }if (familieR.isChecked()){
-                    gfetakaese = (float) 0.10;
+                    gfetakaese = (float) 1.60;
                 }
                 }else{
                     gfetakaese = 0;
                 }if (gorgonzola.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        ggorgonzola= (float)0.20;
+                        ggorgonzola= (float)0.80;
                     }if (grossR.isChecked()){
-                    ggorgonzola= (float)0.25;
+                    ggorgonzola= (float)1.20;
                 }if (familieR.isChecked()){
-                    ggorgonzola= (float)0.30;
+                    ggorgonzola= (float)1.60;
                 }
                 }else{
                     ggorgonzola = 0;
                 }if (haenchen.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gchicken = (float) 0.15;
+                        gchicken = (float) 1.00;
                     }if (grossR.isChecked()) {
-                    gchicken = (float) 0.19;
+                    gchicken = (float) 1.50;
                 }if (familieR.isChecked()){
-                    gchicken = (float) 0.22;
+                    gchicken = (float) 2.00;
                 }
                 }else{
                     gchicken = 0;
@@ -241,108 +241,108 @@ public class MainActivity3 extends AppCompatActivity {
                     if(kleinR.isChecked()){
                         gknoblauch = (float)0.20;
                     }if (grossR.isChecked()){
-                    gknoblauch = (float)0.25;
+                    gknoblauch = (float)0.35;
                 }if (familieR.isChecked()){
-                    gknoblauch = (float)0.27;
+                    gknoblauch = (float)0.50;
                 }
                 }else{
                     gknoblauch = 0;
                 }if (mais.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gmais = (float)0.20;
+                        gmais = (float)0.50;
                     }if (grossR.isChecked()){
-                    gmais = (float)0.25;
+                    gmais = (float)0.85;
                 }if (familieR.isChecked()){
-                    gmais = (float)0.30;
+                    gmais = (float)1.10;
                 }
                 }else{
                     gmais = 0;
                 }if (morzarella.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gmorzarella = (float)0.15;
+                        gmorzarella = (float)0.60;
                     }if (grossR.isChecked()){
-                    gmorzarella = (float)0.20;
+                    gmorzarella = (float)1.00;
                 }if (familieR.isChecked()){
-                    gmorzarella = (float)0.25;
+                    gmorzarella = (float)1.35;
                 }
                 }else{
                     gmorzarella = 0;
                 }if (oliven.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        goliven = (float)0.25;
+                        goliven = (float)0.60;
                     }if (grossR.isChecked()){
-                    goliven = (float)0.30;
+                    goliven = (float)0.90;
                 }if (familieR.isChecked()){
-                    goliven = (float)0.35;
+                    goliven = (float)1.30;
                 }
                 }else{
                     goliven = 0;
                 }if (spinat.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gspinat = (float)0.12;
+                        gspinat = (float)0.50;
                     }if (grossR.isChecked()){
-                    gspinat = (float)0.18;
+                    gspinat = (float)0.80;
                 }if (familieR.isChecked()){
-                    gspinat = (float)0.21;
+                    gspinat = (float)1.10;
                 }
                 }else{
                     gspinat = 0;
                 }if (schinken.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gschinken = (float)0.08;
+                        gschinken = (float)0.60;
                     }if (grossR.isChecked()){
-                    gschinken = (float)0.10;
+                    gschinken = (float)1.00;
                 }if (familieR.isChecked()){
-                    gschinken = (float)0.15;
+                    gschinken = (float)1.40;
                 }
                 }else{
                     gschinken = 0;
                 }if (salami.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gsalami = (float)0.05;
+                        gsalami = (float)0.60;
                     }if (grossR.isChecked()){
-                    gsalami = (float)0.09;
+                    gsalami = (float)1.00;
                 }if (familieR.isChecked()){
-                    gsalami = (float)0.13;
+                    gsalami = (float)1.40;
                 }
                 }else{
                     gsalami = 0;
                 }if (thunfisch.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gthunfisch = (float)0.05;
+                        gthunfisch = (float)0.60;
                     }if (grossR.isChecked()){
-                    gthunfisch = (float)0.08;
+                    gthunfisch = (float)1.00;
                 }if (familieR.isChecked()){
-                    gthunfisch = (float)0.12;
+                    gthunfisch = (float)1.40;
                 }
                 }else{
                     gthunfisch = 0;
                 }if (tomate.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gtomate = (float)0.10;
+                        gtomate = (float)0.50;
                     }if (grossR.isChecked()){
-                    gtomate = (float)0.15;
+                    gtomate = (float)0.80;
                 }if (familieR.isChecked()){
-                    gtomate = (float)0.17;
+                    gtomate = (float)1.10;
                 }
                 }else{
                     gtomate = 0;
                 }if (redonion.isChecked())
                 {
                     if(kleinR.isChecked()){
-                        gredonion = (float) 0.05;
+                        gredonion = (float) 0.50;
                     }if (grossR.isChecked()){
-                    gredonion = (float) 0.08;
+                    gredonion = (float) 0.80;
                 }if (familieR.isChecked()){
-                    gredonion = (float) 0.10;
+                    gredonion = (float) 1.10;
                 }
                 }else{
                     gredonion = 0;
