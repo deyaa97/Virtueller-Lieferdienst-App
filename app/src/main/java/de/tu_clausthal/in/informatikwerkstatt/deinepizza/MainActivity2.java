@@ -1,4 +1,5 @@
 package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,34 +11,34 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
-
 public class MainActivity2 extends AppCompatActivity {
     // Buttons definieren
     Button pl_sa, mi_sa, pl_ma, mi_ma, pl_ha, mi_ha, pl_veg, mi_veg, pl_spec, mi_spec, pl_pica, mi_pica, pl_mex, mi_mex, preis,warenkorb, wunsch;
     boolean pl_sat, mi_sat, pl_mat, mi_mat, pl_hat, mi_hat, pl_vegt, mi_vegt, pl_spect, mi_spect, pl_picat, mi_picat, pl_mext, mi_mext;
     EditText e_sa, e_ma, e_ha, e_veg, e_spec, e_pica, e_mex;
     Spinner spin_sa, spin_ma, spin_ha, spin_veg, spin_spec, spin_pica, spin_mex;
-    public int quantity1, quantity2, quantity3, quantity4, quantity5, quantity6, quantity7, quantity;
+    int quantity1, quantity2, quantity3, quantity4, quantity5, quantity6, quantity7;
     float gespreis, preis1, preis2, preis3, preis4, preis5, preis6, preis7, preis_sa, preis_ma, preis_ha, preis_veg, preis_spec, preis_pica, preis_mex;
     TextView gespreist,txtv_sa,txtv_ma,txtv_ha,txtv_veg,txtv_spec,txtv_pica,txtv_mex,
             gsalami,gmargherita,ghawaii,gvegetaria,gspeciale,gpicante,gmexicana;
-    boolean waren = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main2);
-
-            gsalami = (TextView) findViewById(R.id.gsalami);
+        setContentView(R.layout.activity_main2);
+        //Text veränderung
+        gsalami = (TextView) findViewById(R.id.gsalami);
         gmargherita = (TextView) findViewById(R.id.gmargherita);
         ghawaii = (TextView) findViewById(R.id.ghawaii);
         gvegetaria = (TextView) findViewById(R.id.gvegetaria);
         gspeciale = (TextView) findViewById(R.id.gspeciale);
         gpicante = (TextView) findViewById(R.id.gpicante);
         gmexicana = (TextView) findViewById(R.id.gmexicana);
-
+        // Variablen und Id Verbindungen
         txtv_sa = (TextView) findViewById(R.id.txtv_sa);
         txtv_ma = (TextView) findViewById(R.id.txtv_ma);
         txtv_ha = (TextView) findViewById(R.id.txtv_ha);
@@ -82,12 +83,13 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(wunschIntent);
             }
         });
-
         warenkorb = (Button) findViewById(R.id.waren_korb);
         warenkorb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intIntent = new Intent(getApplicationContext(), MainActivity4.class);
+
                 if (!TextUtils.isEmpty(e_sa.getText().toString()) && !e_sa.getText().toString().equals("0") && (spin_sa.getSelectedItem().toString() =="S" || spin_sa.getSelectedItem().toString() =="M" || spin_sa.getSelectedItem().toString() =="L")) {
                     intIntent.putExtra("quantity","x" + e_sa.getText().toString());
                     intIntent.putExtra("sort", txtv_sa.getText());
@@ -127,7 +129,6 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(intIntent);
             }
         });
-
         preis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -138,7 +139,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 pl_sat = true;
-                increment(quantity1);
+                increment();
                 display(quantity1);
             }
         });
@@ -146,7 +147,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mi_sat = true;
-                decrement(quantity1);
+                decrement();
                 display(quantity1);
             }
         });
@@ -154,7 +155,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 pl_mat = true;
-                increment(quantity2);
+                increment();
                 display(quantity2);
             }
         });
@@ -162,7 +163,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mi_mat = true;
-                decrement(quantity2);
+                decrement();
                 display(quantity2);
             }
         });
@@ -170,7 +171,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 pl_hat = true;
-                increment(quantity3);
+                increment();
                 display(quantity3);
             }
         });
@@ -178,16 +179,15 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mi_hat = true;
-                decrement(quantity3);
+                decrement();
                 display(quantity3);
             }
         });
-
         pl_veg.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
                 pl_vegt = true;
-                increment(quantity4);
+                increment();
                 display(quantity4);
             }
         });
@@ -195,7 +195,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mi_vegt = true;
-                decrement(quantity4);
+                decrement();
                 display(quantity4);
             }
         });
@@ -203,7 +203,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 pl_spect = true;
-                increment(quantity5);
+                increment();
                 display(quantity5);
             }
         });
@@ -211,16 +211,15 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mi_spect = true;
-                decrement(quantity5);
+                decrement();
                 display(quantity5);
             }
         });
-
         pl_pica.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
                 pl_picat = true;
-                increment(quantity6);
+                increment();
                 display(quantity6);
             }
         });
@@ -228,7 +227,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mi_picat = true;
-                decrement(quantity6);
+                decrement();
                 display(quantity6);
             }
         });
@@ -236,7 +235,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 pl_mext = true;
-                increment(quantity7);
+                increment();
                 display(quantity7);
             }
         });
@@ -244,11 +243,11 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mi_mext = true;
-                decrement(quantity7);
+                decrement();
                 display(quantity7);
             }
         });
-        //Spinner definieren
+        //Spinner Salami definieren
         spin_sa = (Spinner) findViewById(R.id.spin_sa);
         //Die Liste von Elementen im Spinner
         List<String> list = new ArrayList<>();
@@ -272,14 +271,16 @@ public class MainActivity2 extends AppCompatActivity {
 
                 }if (spin_sa.getSelectedItem().toString().trim().equals("L")) {
                     preis1 = (float) 8.90;
+                }if (spin_sa.getSelectedItem().toString().trim().equals("Größe")){
+                    preis1 = 0;
                 }
-                gsalami.setText(String.valueOf(preis1) + "€");
+                gsalami.setText(String.format("%.2f",preis1) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Margherita definieren
         spin_ma = (Spinner) findViewById(R.id.spin_ma);
         //Die Liste von Elementen im Spinner
         List<String> list2 = new ArrayList<>();
@@ -302,14 +303,16 @@ public class MainActivity2 extends AppCompatActivity {
 
                 }if (spin_ma.getSelectedItem().toString().trim().equals("L")) {
                     preis2 = (float) 6.90;
+                }if (spin_ma.getSelectedItem().toString().trim().equals("Größe")){
+                    preis2 = 0;
                 }
-                gmargherita.setText(String.valueOf(preis2) + "€");
+                gmargherita.setText(String.format("%.2f",preis2) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Hawaii definieren
         spin_ha = (Spinner) findViewById(R.id.spin_ha);
         //Die Liste von Elementen im Spinner
         List<String> list3 = new ArrayList<>();
@@ -330,14 +333,16 @@ public class MainActivity2 extends AppCompatActivity {
                     preis3 = (float) 6.70;
                 }if (spin_ha.getSelectedItem().toString().trim().equals("L")) {
                     preis3 = (float) 8.90;
+                }if (spin_ha.getSelectedItem().toString().trim().equals("Größe")){
+                    preis3 = 0;
                 }
-                ghawaii.setText(String.valueOf(preis3) + "€");
+                ghawaii.setText(String.format("%.2f",preis3) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Vegetaria definieren
         spin_veg = (Spinner) findViewById(R.id.spin_veg);
         //Die Liste von Elementen im Spinner
         List<String> list4 = new ArrayList<>();
@@ -360,14 +365,16 @@ public class MainActivity2 extends AppCompatActivity {
 
                 }if (spin_veg.getSelectedItem().toString().trim().equals("L")) {
                     preis4 = (float) 9.50;
+                }if (spin_veg.getSelectedItem().toString().trim().equals("Größe")){
+                    preis4 = 0;
                 }
-                gvegetaria.setText(String.valueOf(preis4) + "€");
+                gvegetaria.setText(String.format("%.2f",preis4) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Speciale definieren
         spin_spec = (Spinner) findViewById(R.id.spin_spec);
         //Die Liste von Elementen im Spinner
         List<String> list5 = new ArrayList<>();
@@ -388,14 +395,16 @@ public class MainActivity2 extends AppCompatActivity {
                     preis5 = (float) 6.90;
                 }if (spin_spec.getSelectedItem().toString().trim().equals("L")) {
                     preis5 = (float) 9.50;
+                }if (spin_spec.getSelectedItem().toString().trim().equals("Größe")){
+                    preis5 = 0;
                 }
-                gspeciale.setText(String.valueOf(preis5) + "€");
+                gspeciale.setText(String.format("%.2f",preis5) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Picante definieren
         spin_pica = (Spinner) findViewById(R.id.spin_pica);
         //Die Liste von Elementen im Spinner
         List<String> list6 = new ArrayList<>();
@@ -412,20 +421,20 @@ public class MainActivity2 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent6, View view6, int position6, long id6) {
                 if (spin_pica.getSelectedItem().toString().trim().equals("S")) {
                     preis6 = (float) 4.90;
-                }
-                if (spin_pica.getSelectedItem().toString().trim().equals("M")) {
+                }if (spin_pica.getSelectedItem().toString().trim().equals("M")) {
                     preis6 = (float) 6.90;
-                }
-                if (spin_pica.getSelectedItem().toString().trim().equals("L")) {
+                }if (spin_pica.getSelectedItem().toString().trim().equals("L")) {
                     preis6 = (float) 9.50;
+                }if (spin_pica.getSelectedItem().toString().trim().equals("Größe")){
+                    preis6 = 0;
                 }
-                gpicante.setText(String.valueOf(preis6) + "€");
+                gpicante.setText(String.format("%.2f",preis6) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-        //Spinner definieren
+        //Spinner Mexicana definieren
         spin_mex = (Spinner) findViewById(R.id.spin_mex);
         //Die Liste von Elementen im Spinner
         List<String> list7 = new ArrayList<>();
@@ -446,15 +455,18 @@ public class MainActivity2 extends AppCompatActivity {
                     preis7 = (float) 6.90;
                 }if (spin_mex.getSelectedItem().toString().trim().equals("L")) {
                     preis7 = (float) 9.50;
+                }if (spin_mex.getSelectedItem().toString().trim().equals("Größe")){
+                    preis7 = 0;
                 }
-                gmexicana.setText(String.valueOf(preis7) + "€");
+                gmexicana.setText(String.format("%.2f",preis7) + "€");
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
     }
-    public void increment (int view) {
+    // Anzahl an Pizzen +1
+    public void increment () {
         if (pl_sat == true) {
             quantity1 = quantity1 + 1;
         }if (pl_mat == true) {
@@ -471,7 +483,8 @@ public class MainActivity2 extends AppCompatActivity {
             quantity7 = quantity7 + 1;
         }
     }
-    public void decrement (int view) {
+    // Anzahl an pizzen -1
+    public void decrement () {
         if (quantity1 >0 && mi_sat == true){
             quantity1 = quantity1 - 1;
         }if (quantity2 >0 && mi_mat == true){
@@ -520,6 +533,7 @@ public class MainActivity2 extends AppCompatActivity {
             mi_mext = false;
         }
     }
+    // Berechnung des Gesamtpreises
     public void gesamtpreis () {
         preis_sa = quantity1 * preis1;
         preis_ma = quantity2 * preis2;
