@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class MainActivity4 extends AppCompatActivity {
@@ -23,8 +25,12 @@ public class MainActivity4 extends AppCompatActivity {
         liefern.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent liefernIntent = new Intent(MainActivity4.this, MainActivity5.class);
-                startActivity(liefernIntent);
+                if(sort == null && sort2 == null && sort3 == null && sort4 == null && sort5 == null && sort6== null && sort7 == null){
+                    Toast.makeText(MainActivity4.this, "Bitte eine Pizza auswählen", Toast.LENGTH_SHORT).show();
+                }else {
+                    Intent liefernIntent = new Intent(MainActivity4.this, MainActivity5.class);
+                    startActivity(liefernIntent);
+                }
             }
         });
         Bundle extras = getIntent().getExtras();
