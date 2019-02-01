@@ -23,13 +23,14 @@ public class MainActivity2 extends AppCompatActivity {
     float gespreis, preis1, preis2, preis3, preis4, preis5, preis6, preis7, preis_sa, preis_ma, preis_ha, preis_veg, preis_spec, preis_pica, preis_mex;
     TextView gespreist,txtv_sa,txtv_ma,txtv_ha,txtv_veg,txtv_spec,txtv_pica,txtv_mex,
             gsalami,gmargherita,ghawaii,gvegetaria,gspeciale,gpicante,gmexicana;
+    boolean waren = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+            setContentView(R.layout.activity_main2);
 
-        gsalami = (TextView) findViewById(R.id.gsalami);
+            gsalami = (TextView) findViewById(R.id.gsalami);
         gmargherita = (TextView) findViewById(R.id.gmargherita);
         ghawaii = (TextView) findViewById(R.id.ghawaii);
         gvegetaria = (TextView) findViewById(R.id.gvegetaria);
@@ -87,39 +88,37 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intIntent = new Intent(getApplicationContext(), MainActivity4.class);
-                if (!TextUtils.isEmpty(e_sa.getText().toString()) && !e_sa.getText().toString().equals("0")) {
+                if (!TextUtils.isEmpty(e_sa.getText().toString()) && !e_sa.getText().toString().equals("0") && (spin_sa.getSelectedItem().toString() =="S" || spin_sa.getSelectedItem().toString() =="M" || spin_sa.getSelectedItem().toString() =="L")) {
                     intIntent.putExtra("quantity","x" + e_sa.getText().toString());
                     intIntent.putExtra("sort", txtv_sa.getText());
                     String spinText_sa = spin_sa.getSelectedItem().toString();
                     intIntent.putExtra("grosse", spinText_sa);
-                }
-                if (!TextUtils.isEmpty(e_ma.getText().toString()) && !e_ma.getText().toString().equals("0")){
+                }if (!TextUtils.isEmpty(e_ma.getText().toString()) && !e_ma.getText().toString().equals("0") && (spin_ma.getSelectedItem().toString() =="S" || spin_ma.getSelectedItem().toString() =="M" || spin_ma.getSelectedItem().toString() =="L")){
                     intIntent.putExtra("quantity2","x" + e_ma.getText().toString());
                     intIntent.putExtra("sort2", txtv_ma.getText());
                     String spinText_ma = spin_ma.getSelectedItem().toString();
                     intIntent.putExtra("grosse2", spinText_ma);
-                }
-                if (!TextUtils.isEmpty(e_ha.getText().toString()) && !e_ha.getText().toString().equals("0")){
+                }if (!TextUtils.isEmpty(e_ha.getText().toString()) && !e_ha.getText().toString().equals("0")&& (spin_ha.getSelectedItem().toString() =="S" || spin_ha.getSelectedItem().toString() =="M" || spin_ha.getSelectedItem().toString() =="L")){
                     intIntent.putExtra("quantity3","x" + e_ha.getText().toString());
                     intIntent.putExtra("sort3", txtv_ha.getText());
                     String spinText_ha = spin_ha.getSelectedItem().toString();
                     intIntent.putExtra("grosse3", spinText_ha);
-                }if (!TextUtils.isEmpty(e_veg.getText().toString()) && !e_veg.getText().toString().equals("0")){
+                }if (!TextUtils.isEmpty(e_veg.getText().toString()) && !e_veg.getText().toString().equals("0")&& (spin_veg.getSelectedItem().toString() =="S" || spin_veg.getSelectedItem().toString() =="M" || spin_veg.getSelectedItem().toString() =="L")){
                     intIntent.putExtra("quantity4","x" + e_veg.getText().toString());
                     intIntent.putExtra("sort4", txtv_veg.getText());
                     String spinText_veg = spin_veg.getSelectedItem().toString();
                     intIntent.putExtra("grosse4", spinText_veg);
-                }if (!TextUtils.isEmpty(e_spec.getText().toString()) && !e_spec.getText().toString().equals("0")){
+                }if (!TextUtils.isEmpty(e_spec.getText().toString()) && !e_spec.getText().toString().equals("0")&& (spin_spec.getSelectedItem().toString() =="S" || spin_spec.getSelectedItem().toString() =="M" || spin_spec.getSelectedItem().toString() =="L")){
                     intIntent.putExtra("quantity5","x" + e_spec.getText().toString());
                     intIntent.putExtra("sort5", txtv_spec.getText());
                     String spinText_spec = spin_spec.getSelectedItem().toString();
                     intIntent.putExtra("grosse5", spinText_spec);
-                }if (!TextUtils.isEmpty(e_pica.getText().toString()) && !e_pica.getText().toString().equals("0")){
+                }if (!TextUtils.isEmpty(e_pica.getText().toString()) && !e_pica.getText().toString().equals("0")&& (spin_pica.getSelectedItem().toString() =="S" || spin_pica.getSelectedItem().toString() =="M" || spin_pica.getSelectedItem().toString() =="L")){
                     intIntent.putExtra("quantity6","x" + e_pica.getText().toString());
                     intIntent.putExtra("sort6", txtv_pica.getText());
                     String spinText_pica = spin_pica.getSelectedItem().toString();
                     intIntent.putExtra("grosse6", spinText_pica);
-                }if (!TextUtils.isEmpty(e_mex.getText().toString()) && !e_mex.getText().toString().equals("0")){
+                }if (!TextUtils.isEmpty(e_mex.getText().toString()) && !e_mex.getText().toString().equals("0")&& (spin_mex.getSelectedItem().toString() =="S" || spin_mex.getSelectedItem().toString() =="M" || spin_mex.getSelectedItem().toString() =="L")){
                     intIntent.putExtra("quantity7","x" + e_mex.getText().toString());
                     intIntent.putExtra("sort7", txtv_mex.getText());
                     String spinText_mex = spin_mex.getSelectedItem().toString();
