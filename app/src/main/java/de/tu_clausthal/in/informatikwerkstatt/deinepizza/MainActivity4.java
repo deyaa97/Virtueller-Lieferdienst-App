@@ -1,23 +1,24 @@
 package de.tu_clausthal.in.informatikwerkstatt.deinepizza;
-
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.ListView;
+import java.util.ArrayList;
 
 public class MainActivity4 extends AppCompatActivity {
-    TextView Pizza_sort,Pizza_sort2,Pizza_sort3,Pizza_sort4,Pizza_sort5,Pizza_sort6,Pizza_sort7,
-            Pizza_quantity,Pizza_quantity2,Pizza_quantity3,Pizza_quantity4,Pizza_quantity5,
-            Pizza_quantity6,Pizza_quantity7,Pizza_grosse,Pizza_grosse2,Pizza_grosse3,Pizza_grosse4,Pizza_grosse5,Pizza_grosse6,Pizza_grosse7;
+
     String sort,sort2,sort3,sort4,sort5,sort6,sort7,quan,quan2,quan3,quan4,quan5,quan6,quan7,grosse,grosse2,grosse3,grosse4,grosse5,grosse6,grosse7;
     Button liefern;
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
+
         liefern = (Button) findViewById(R.id.liefern1);
         liefern.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,30 +27,6 @@ public class MainActivity4 extends AppCompatActivity {
                 startActivity(liefernIntent);
             }
         });
-
-        Pizza_sort = (TextView) findViewById(R.id.pizza_sort);
-        Pizza_sort2= (TextView) findViewById(R.id.pizza_sort2);
-        Pizza_sort3= (TextView) findViewById(R.id.pizza_sort3);
-        Pizza_sort4= (TextView) findViewById(R.id.pizza_sort4);
-        Pizza_sort5= (TextView) findViewById(R.id.pizza_sort5);
-        Pizza_sort6= (TextView) findViewById(R.id.pizza_sort6);
-        Pizza_sort7= (TextView) findViewById(R.id.pizza_sort7);
-        Pizza_quantity = (TextView) findViewById(R.id.pizza_quantity);
-        Pizza_quantity2 = (TextView) findViewById(R.id.pizza_quantity2);
-        Pizza_quantity3 = (TextView) findViewById(R.id.pizza_quantity3);
-        Pizza_quantity4 = (TextView) findViewById(R.id.pizza_quantity4);
-        Pizza_quantity5 = (TextView) findViewById(R.id.pizza_quantity5);
-        Pizza_quantity6 = (TextView) findViewById(R.id.pizza_quantity6);
-        Pizza_quantity7 = (TextView) findViewById(R.id.pizza_quantity7);
-        Pizza_grosse = (TextView) findViewById(R.id.grosse);
-        Pizza_grosse2 = (TextView) findViewById(R.id.grosse2);
-        Pizza_grosse3 = (TextView) findViewById(R.id.grosse3);
-        Pizza_grosse4 = (TextView) findViewById(R.id.grosse4);
-        Pizza_grosse5 = (TextView) findViewById(R.id.grosse5);
-        Pizza_grosse6 = (TextView) findViewById(R.id.grosse6);
-        Pizza_grosse7 = (TextView) findViewById(R.id.grosse7);
-
-
         Bundle extras = getIntent().getExtras();
         if (extras != null){
             sort = extras.getString("sort");
@@ -74,27 +51,24 @@ public class MainActivity4 extends AppCompatActivity {
             grosse6 = extras.getString("grosse6");
             grosse7 = extras.getString("grosse7");
         }
-        Pizza_sort.setText(sort);
-        Pizza_sort2.setText(sort2);
-        Pizza_sort3.setText(sort3);
-        Pizza_sort4.setText(sort4);
-        Pizza_sort5.setText(sort5);
-        Pizza_sort6.setText(sort6);
-        Pizza_sort7.setText(sort7);
-        Pizza_quantity.setText(quan);
-        Pizza_quantity2.setText(quan2);
-        Pizza_quantity3.setText(quan3);
-        Pizza_quantity4.setText(quan4);
-        Pizza_quantity5.setText(quan5);
-        Pizza_quantity6.setText(quan6);
-        Pizza_quantity7.setText(quan7);
-        Pizza_grosse.setText(grosse);
-        Pizza_grosse2.setText(grosse2);
-        Pizza_grosse3.setText(grosse3);
-        Pizza_grosse4.setText(grosse4);
-        Pizza_grosse5.setText(grosse5);
-        Pizza_grosse6.setText(grosse6);
-        Pizza_grosse7.setText(grosse7);
-
+        listView = (ListView)findViewById(R.id.list_view);
+        ArrayList<String> arrayList = new ArrayList<>();
+        if (sort != null) {
+            arrayList.add(sort + " " + quan + " " + grosse);
+        }if (sort2 != null){
+            arrayList.add(sort2 + " " + quan2 + " " + grosse2);
+        }if (sort3 != null){
+            arrayList.add(sort3 + " " + quan3 + " " + grosse3);
+        }if (sort4 != null){
+            arrayList.add(sort4 + " " + quan4 + " " + grosse4);
+        }if (sort5 != null){
+            arrayList.add(sort5 + " " + quan5 + " " + grosse5);
+        }if (sort6 != null){
+            arrayList.add(sort6 + " " + quan6 + " " + grosse6);
+        }if (sort7 != null){
+            arrayList.add(sort7 + " " + quan7 + " " + grosse7);
+        }
+        ArrayAdapter arrayAdapter = new ArrayAdapter(MainActivity4.this, android.R.layout.simple_list_item_1, arrayList);
+        listView.setAdapter(arrayAdapter);
     }
 }
